@@ -37,11 +37,7 @@ font-family: 'Lato', sans-serif;
 -webkit-font-smoothing: antialiased;
 margin:0;
 line-height: 1.2;
-overflow-x: hidden;
--webkit-overflow: hidden;
-  -webkit-overflow-scrolling: touch;
-  overflow: hidden;
--webkit-font-smoothing: antialiased;
+
 
 background: #F5F5ED;
 /*background: #F2F2F2;*/
