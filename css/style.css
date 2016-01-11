@@ -607,11 +607,11 @@ opacity: 0;
   opacity: 1;
 }
 
-.mobile #findus .infoSummary{
+.mobile #findUs .infoSummary{
   background-image: url("../images/karta.bmp");
 
 }
-.mobile #findus .infoSummary h1{
+.mobile #findUs .infoSummary h1{
   visibility: hidden;
 }
 .mobile #cursor{
