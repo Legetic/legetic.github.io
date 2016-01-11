@@ -436,7 +436,9 @@ height: 500px;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
 }
-
+.mobile.small #header{
+  height:70%;
+}
 #rightButton{
   cursor: pointer;
 height: 70px;
