@@ -94,7 +94,7 @@ margin-top: -10px;
   width:0%;
   height:1px;
   background: #0F60AA;
-
+  -webkit-transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
 -ms-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
@@ -117,7 +117,7 @@ width:100%;
   /*background-image: url('../images/overlay.png');*/
   background: rgba(17,17,17,.3);
 
-
+  -webkit-transition: opacity .25s ease-in-out 0s;
     transition: opacity .25s ease-in-out 0s;
 }
 
@@ -169,14 +169,14 @@ width:100%;
   left:0;
 position: relative;
 
-
+  -webkit-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
 -moz-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
 -ms-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
 -o-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
   transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
 }
 body.loaded #content{
-
+  -webkit-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
 -moz-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
 -ms-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
 -o-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
@@ -219,7 +219,7 @@ z-index:9999;
   position:fixed;
 
   display:block;
-   /* Safari */
+  -webkit-transition: width 0.6s cubic-bezier(.77,0,.175,1); /* Safari */
     transition: width 0.6s cubic-bezier(.77,0,.175,1);
 
         font-size: 1.7rem;
@@ -244,7 +244,7 @@ z-index:9999;
   height: 100%;
   color:white !important;
 
-
+  -webkit-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
   -moz-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
   -ms-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
   -o-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
@@ -297,7 +297,7 @@ z-index:9999;
   background: white;
   opacity: 0;
 
-   /* Safari */
+  -webkit-transition: opacity 0.3s ease-in-out; /* Safari */
     transition: opacity 0.3s ease-in-out;
 }
 .small #smallMenu.extended #closeMenu{
@@ -474,7 +474,7 @@ border-radius: 50%;
   background: #0F61AA;
   height: 50px;
   width:100px;
-
+  -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
@@ -502,7 +502,7 @@ background: #142433;
   /*background:#12161F;
   background:#101C26;*/
 
-
+  -webkit-transition: height 0.3s ease-in-out;
 -moz-transition: height 0.3s ease-in-out;
 -ms-transition: height 0.3s ease-in-out;
 -o-transition: height 0.3s ease-in-out;
@@ -551,7 +551,7 @@ margin-top: 75px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-
+  -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
@@ -597,7 +597,7 @@ opacity: 0;
   height:100%;
   width:100%;
 
-
+  -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
@@ -743,7 +743,7 @@ left:calc(50% - 25px);
 .sliderButtons{
   bottom: calc(50%);
   opacity: 0;
-
+  -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
@@ -780,7 +780,7 @@ bottom:0;
 
 }
 .responsiveButton a{
-
+  -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
@@ -829,7 +829,7 @@ margin: 0;
 
 
 
-
+  -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
 }
 .buff h1{
@@ -858,9 +858,9 @@ width: 100%;
 }
 .buffImage{
 
-
+  -webkit-transition: -webkit-transform 2s;
 transition: transform 2s;
-
+-webkit-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
    -moz-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
      -o-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
         transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955); /* custom */
