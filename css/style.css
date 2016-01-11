@@ -1,0 +1,882 @@
+/*
+Color Palette:
+
+YELLOW
+lightest yellow: FFDA65
+lighter yellow: FFD03A
+base yellow: FFC305
+darker yellow: CE9C00
+darkest yellow: A27B00
+
+ORANGE
+lightest Orange: FF9565
+lighter Orange:FF773A
+base Orange: FF5305
+darker Orange: CE4000
+darkest Orange: A23200
+
+BLUE
+lightest blue: 558EC1
+lighter blue: 3275B1
+base blue: 0F61AA
+darker blue:094A85
+darkest blue: 063A69
+even darker than darkest:#12161F or #142433
+
+*/
+
+
+
+/*General section S1*/
+body{
+font-family: 'Lato', sans-serif;
+-webkit-font-smoothing: antialiased;
+margin:0;
+line-height: 1.2;
+overflow-x: hidden;
+
+background: #F5F5ED;
+/*background: #F2F2F2;*/
+}
+a{
+  text-decoration: none !important;
+}
+p{
+    font-size: 16px;
+  line-height: 1.2;
+  color:#333333;
+}
+
+h1{
+  font-size: 20px;
+font-weight: normal;
+  letter-spacing: 1.7px;
+
+  color: #101C26;
+  margin: 0;
+  text-align: center;
+  color: #0F60AA;
+
+}
+h2{
+  font-size: 15px;
+font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+  text-align: center;
+
+}
+h4{
+
+  font-size: 20px;
+  letter-spacing: 2px;
+
+  font-weight: 400;
+  color: #0F60AA;
+}
+/*Use to deactivate <a>*/
+.deactivated{
+  pointer-events: none;
+}
+/*use for highlighting*/
+.highlight{
+  color:#FF5305 !important;
+}
+/*Create a div with this class.*/
+.underscore{
+margin-top: -10px;
+  width:0%;
+  height:1px;
+  background: #0F60AA;
+  -webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/*Then use:
+#id:hover .underscore{
+width:100%;
+}
+*/
+
+/*Optional overlay. create div with class colorOverlay to use.*/
+.notMobile .colorOverlay{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+
+/*ta bort kanske*/
+  /*background-image: url('../images/overlay.png');*/
+  background: rgba(17,17,17,.3);
+
+  -webkit-transition: opacity .25s ease-in-out 0s;
+    transition: opacity .25s ease-in-out 0s;
+}
+
+/*Screen adjust FONTSIZES section 1 S2*/
+@media screen and (max-width: 1660px) {
+    p {
+        font-size: 15px !important;
+    }
+    .buff h1{
+      font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    p {
+        font-size: 18px !important;
+    }
+    .buff h1{
+      font-size: 20px !important;
+    }
+}
+
+/*Screen adjust Content/body margin*/
+@media screen and (max-width: 1400px) {
+     body.notMobile #content {
+      margin-left: 100px !important;
+      margin-right: 100px !important;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    #content {
+      margin-left: 50px !important;
+      margin-right: 50px !important;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    #content {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+
+
+}
+
+/*content section S3*/
+#content{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  left:0;
+position: relative;
+
+  -webkit-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
+-moz-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
+-ms-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
+-o-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
+  transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1);
+}
+body.loaded #content{
+  -webkit-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+-moz-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+-ms-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+-o-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+  transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+}
+#innerContent{
+  background-color: white;
+}
+body.notMobile #innerContent{
+padding: 30px;
+}
+body.notMobile #content{
+
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+body.small #content{
+
+  margin: 0 !important;
+}
+body.small #innerContent{
+  padding-top:0;
+}
+/*this is needed for smallMenu*/
+.small #content.menuExtended{
+position:absolute;
+left:70%;
+margin: 0 !important;
+
+}
+/*smallMenu is a menu that is used when the screen is small*/
+#smallMenu{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  height:100vh;
+width:0;
+z-index:9999;
+  background:#0F60AA;
+  margin:0;
+  position:fixed;
+
+  display:block;
+  -webkit-transition: width 0.6s cubic-bezier(.77,0,.175,1); /* Safari */
+    transition: width 0.6s cubic-bezier(.77,0,.175,1);
+
+        font-size: 1.7rem;
+}
+#smallMenu ul{
+  list-style-type: none;
+  letter-spacing: .05em;
+  font-weight: 700;
+  padding:0;
+}
+#smallMenu li{
+  white-space: nowrap;
+  overflow: hidden;
+  height: 60px;
+
+  /*border-top: 1px solid #12161F;*/
+}
+#smallMenu a{
+  display: block;
+  padding:20px;
+  width: 100%;
+  height: 100%;
+  color:white !important;
+
+  -webkit-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
+  -moz-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
+  -ms-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
+  -o-transition:margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
+  transition: margin 0.2s ease-in-out,background-color 0.2s ease-in-out;
+}
+#smallMenu a:hover{
+  margin-left: 30px;
+  background-color: #12161F;
+}
+.small #smallMenu.extended{
+  width:70%;
+}
+
+/*
+#smallMenu.notExtended .navigation li{
+  margin-left:-100%;
+}
+
+
+.small #smallMenu.extended ul.navigation li:nth-child(1){
+    -webkit-animation: slidein .5s cubic-bezier(.87,-.41,.19,1.44)  forwards;
+}
+.small #smallMenu.extended ul.navigation li:nth-child(2){
+    -webkit-animation: slidein .5s cubic-bezier(.87,-.41,.19,1.44) .1s forwards;
+}
+.small #smallMenu.extended ul.navigation li:nth-child(3){
+    -webkit-animation: slidein .5s cubic-bezier(.87,-.41,.19,1.44) .2s forwards;
+}
+.small #smallMenu.extended ul.navigation li:nth-child(4){
+    -webkit-animation: slidein .5s cubic-bezier(.87,-.41,.19,1.44) .3s forwards;
+}
+@-webkit-keyframes slidein {
+    0% { margin-left: -100%; }
+
+    100% { margin-left:0;}
+}*/
+
+
+
+#closeMenu{
+  z-index:9999;
+  display:block;
+  height: 100%;
+  position: absolute;
+
+  width:10px;
+  top:0;
+  left:100%;
+  background: white;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.3s ease-in-out; /* Safari */
+    transition: opacity 0.3s ease-in-out;
+}
+.small #smallMenu.extended #closeMenu{
+width: 100vw;
+opacity: 0.7;
+}
+
+
+/*menu section S4*/
+#menu{
+  z-index: 100;
+
+  height: 90px;
+  width: 100%;
+}
+#menu .row{
+  width: 100%;
+  margin: 0;
+}
+.small #menu{
+  display:none;
+
+}
+.small #mobileMenu{
+  display: inline;
+}
+
+#mobileMenu{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: fixed;
+  z-index:100;
+  width: 100%;
+  height: 55px;
+  background: rgba(255,255,255,.9);
+
+     border-bottom: 1px solid #D2E6F0;
+  padding:0px;
+  display: none;
+}
+/*Menu substitute is necessary when the smallMenu is used since smallmenu is fixed*/
+#menuSubstitute{
+  width: 100%;
+  position: relative;
+  height: 0;
+  visibility: hidden;
+}
+#menuSubstitute img{
+  z-index: 1000;
+  position: absolute;
+  width: 190px;
+  top:50%;
+  left:50%;
+  margin-left: -95px;
+  margin-top: -19.5px;
+
+}
+.small #menuSubstitute{
+  height: 54px;
+  visibility: visible;
+}
+body:not(.small) #menuSubstitute{
+  visibility: hidden;
+}
+/*the sportsmedicine logo in the upper left*/
+#logo{
+  display: inline-block;
+  height: 60px;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+
+  margin-top: -30px;
+
+}
+
+/*logoSmall is the smaller version of the logo. Or a "hamburger" menu icon*/
+#logoSmall{
+  cursor: pointer;
+  position: absolute;
+
+    height: 50px;
+left:10px;
+    top:0;
+}
+
+
+.notMobile.small #menu{
+  margin-bottom: 25px;
+  height: 0px;
+  margin: 0;
+}
+
+
+.menuItem{
+  cursor: pointer;
+padding: 0;
+
+}
+.small .menuItem{
+
+  display: none;
+}
+.menuCenterHelp{
+  display:flex;
+      align-items: center;
+      justify-content: center;
+   width: 100%;
+   height: 100%;
+padding: 30px;
+
+}
+
+
+.menuItem:hover .underscore{
+width:100%;
+
+}
+
+
+/*Header Section S5*/
+#header{
+overflow: hidden;
+
+background-image: url('../images/gallery/goalie_940x360.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 500px;
+  width: 100%;
+  position: relative;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+#rightButton{
+  cursor: pointer;
+height: 70px;
+width: 70px;
+background: white;
+position: absolute;
+right: 0;
+margin-right: 20px;
+border-radius: 50%;
+
+}
+#leftButton{
+  cursor: pointer;
+height: 70px;
+width: 70px;
+background: white;
+position: absolute;
+left: 0;
+margin-left: 20px;
+border-radius: 50%;
+
+-moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+}
+#tabChanger{
+
+  text-align: center;
+  cursor: pointer;
+  z-index: 101;
+  position: absolute;
+  bottom:0;
+  border-radius: 3px;
+  margin-top: -45px;
+  left: calc(50% - 50px);
+  background: #0F61AA;
+  height: 50px;
+  width:100px;
+  -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+#tabChanger h4{
+  margin: 0;
+
+
+  line-height: 50px;
+}
+
+#infoTab{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+
+  bottom: 0;
+  position: absolute;
+
+  width: 100%;
+  height: 5px;
+  padding-left: 45px;
+  padding-right: 45px;
+background: #142433;
+  /*background:#12161F;
+  background:#101C26;*/
+
+  -webkit-transition: height 0.3s ease-in-out;
+-moz-transition: height 0.3s ease-in-out;
+-ms-transition: height 0.3s ease-in-out;
+-o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.small #infoTab{
+  overflow-y: scroll !important;
+  position: absolute;
+
+}
+#infoTab.extended{
+  height: 100%;
+
+}
+#infoTab p{
+  color:white;
+
+}
+#infoTab a:hover{
+  color:white !important;
+}
+/*.small #infoTab p{
+visibility: hidden;
+}*/
+#tabChanger.extended{
+background:#FF5305;
+margin-top: 0px;
+top:0;
+}
+.infoOption{
+
+margin-top: 75px;
+  padding: 0px;
+
+}
+.infoOptionWrapper{
+  height: 300px;
+}
+.infoIcon{
+  display: block;
+
+  height: 100px;
+  width: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.infoSummary{
+  text-align: center;
+
+  width:100%;
+  height: 100%;
+  margin-top: 20px;
+
+}
+
+
+
+.infoSummary h1{
+  color:#FF5305;
+}
+.infoSummary a{
+  color: #FF5305 !important;
+}
+.infoOption path{
+fill:white !important;
+}
+
+.notMobile #findUs:hover #karta{
+  opacity: 1;
+  z-index: 100;
+}
+.notMobile #findUs:hover .infoSummary{
+  opacity: 0;
+
+}
+
+
+#karta{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+
+  display: block;
+  position: absolute;
+opacity: 0;
+  height:100%;
+  width:100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mobile #karta{
+  opacity: 1;
+}
+
+
+
+#pointer {
+
+    height: 40px;
+    width:40px;
+    margin-top:50px;
+
+    /*
+     * Make the initial position to be the center of the circle you want this
+     * object follow.
+     */
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*
+     * Sets up the animation duration, timing-function (or easing)
+     * and iteration-count. Ensure you use the appropriate vendor-specific
+     * prefixes as well as the official syntax for now. Remember, tools like
+     * CSS Please are your friends!
+     */
+    -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+            animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+
+
+
+}
+
+.mobile #pointer{
+  display: none;
+}
+/*
+ * Set up the keyframes to actually describe the begining and end states of
+ * the animation.  The browser will interpolate all the frames between these
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+.socialMediaModule{
+  position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  width:100px;
+  background: #3B5998;
+
+  left:calc(50% - 50px);
+}
+#facebookF{
+  position: absolute;
+top:calc(50% - 25px);
+left:calc(50% - 25px);
+  display: block;
+  height: 50px;
+  width: 50px;
+
+}
+#facebookF path{
+  fill:white !important;
+}
+
+#facebookF:hover path {
+    fill: #FF5305 !important;
+    cursor: pointer;
+}
+
+
+#rightButton:hover img{
+
+  animation:arrowAnimation ease-in-out 0.8s infinite alternate;
+}
+#leftButton:hover img{
+
+  animation:arrowAnimation2 ease-in-out 0.8s infinite alternate;
+}
+
+@keyframes arrowAnimation{
+  0%{
+    transform:translateX(-2px);
+  }
+  50%{
+    transform:translateX(5px);
+  }
+  100%{
+    transform:translateX(-2px);
+  }
+}
+@keyframes arrowAnimation2{
+  0%{
+    transform:translateX(2px);
+  }
+  50%{
+    transform:translateX(-5px);
+  }
+  100%{
+    transform:translateX(2px);
+  }
+}
+.sliderButtons{
+  bottom: calc(50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.sliderArrows{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  opacity:0.8;
+}
+
+#header:hover .sliderButtons{
+  bottom: calc(50% - 35px);
+  opacity: 1;
+}
+
+/*responsiveButton section S6*/
+.responsiveButton{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+position: absolute;
+bottom:0;
+  text-align: center;
+
+  height: 36px;
+  width: 100%;
+  border:1px solid #FF5305;
+  border-radius: 3px;
+
+
+}
+.responsiveButton a{
+  -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color:#FF5305;
+}
+
+.responsiveButton h4{
+font-size:16px;
+font-weight: normal;
+margin: 0;
+
+
+}
+.responsiveButtonLink{
+
+  width: 100%;
+   line-height: 36px;
+   display: block;
+   text-align: center;
+}
+
+.responsiveButton:before {
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  background: #FF5305;
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition: transform .2s ease-out;
+}
+.responsiveButton:hover:before{transform: scaleY(1);}
+
+.responsiveButton:hover a{
+  color:white !important;
+
+}
+
+/*Buff section S7*/
+.buff{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  text-align: center;
+  padding: 30px;
+  /*margin-top:-100px;ta bort*/
+
+
+
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+.buff h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  margin-left: -100%;
+  margin-right: -100%;
+}
+
+
+.buffButtonWrapper{
+
+position: relative;
+
+min-height: 165px;
+
+width: 100%;
+}
+
+.buffImageWrapper{
+   min-height: 350px;
+   max-height: 350px;
+   overflow: hidden;
+   position: relative;
+}
+.buffImage{
+
+  -webkit-transition: -webkit-transform 2s;
+transition: transform 2s;
+-webkit-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
+   -moz-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
+     -o-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
+        transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955); /* custom */
+}
+.notMobile .buff:hover .buffImage{
+
+transform: scale(1.15);
+  color:red;
+}
+.notMobile .buff:hover .colorOverlay{
+  opacity: 0;
+}
+
+.buff p{
+margin-top: 10px;
+margin-bottom: 0;
+}
+
+@media screen and (max-width: 650px) {
+
+.buff{
+  min-height: none;
+  max-height: none;
+
+}
+.mobile .buffButtonWrapper{
+  min-height: 190px;
+}
+.notMobile .buffButtonWrapper{
+  min-height: 350px;
+}
+}
