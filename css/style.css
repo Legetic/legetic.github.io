@@ -607,9 +607,21 @@ opacity: 0;
   opacity: 1;
 }
 
-.mobile .infoSummary{
-  background-image: url("images/karta.bmp");
+.mobile #findus .infoSummary{
+  background-image: url("../images/karta.bmp");
 
+}
+.mobile #findus .infoSummary h1{
+  visibility: hidden;
+}
+.mobile #cursor{
+  visibility: hidden;
+}
+.mobile #findUs svg{
+  visibility: hidden;
+}
+.mobile #karta{
+  visibility: hidden;
 }
 
 #pointer {
