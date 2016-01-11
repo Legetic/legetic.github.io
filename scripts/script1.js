@@ -105,12 +105,12 @@ mobile = true;
   return array;
 }
 
-if(!$body.hasClass('mobile')){
+
 shuffle(backgroundImages);
-}
 
+if(!$body.hasClass('mobile')){
 slideInterval = setInterval(slide,4000);
-
+}
   function slide()
   {
 if(!infoTabOpen){
