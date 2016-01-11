@@ -317,7 +317,7 @@ opacity: 0.7;
 
 }
 .small #mobileMenu{
-  display: inline;
+  display: block;
 }
 
 #mobileMenu{
@@ -358,7 +358,7 @@ body:not(.small) #menuSubstitute{
 }
 /*the sportsmedicine logo in the upper left*/
 #logo{
-  display: inline-block;
+  display: block-block;
   height: 60px;
   position: absolute;
   left: 0%;
