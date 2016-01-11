@@ -161,8 +161,7 @@ width:100%;
 
 /*content section S3*/
 #content{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
   left:0;
 position: relative;
 
@@ -207,8 +206,7 @@ margin: 0 !important;
 }
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
   height:100vh;
 width:0;
 z-index:9999;
@@ -323,8 +321,7 @@ opacity: 0.7;
 }
 
 #mobileMenu{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
   position: fixed;
   z-index:100;
   width: 100%;
@@ -487,9 +484,8 @@ border-radius: 50%;
 }
 
 #infoTab{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 
+overflow-x: hidden;
   bottom: 0;
   position: absolute;
 
@@ -588,8 +584,7 @@ fill:white !important;
 
 
 #karta{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
 
   display: block;
   position: absolute;
@@ -752,8 +747,7 @@ left:calc(50% - 25px);
 
 /*responsiveButton section S6*/
 .responsiveButton{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
 position: absolute;
 bottom:0;
   text-align: center;
@@ -808,8 +802,7 @@ margin: 0;
 
 /*Buff section S7*/
 .buff{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
   text-align: center;
   padding: 30px;
   /*margin-top:-100px;ta bort*/
