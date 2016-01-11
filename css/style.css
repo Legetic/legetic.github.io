@@ -607,7 +607,10 @@ opacity: 0;
   opacity: 1;
 }
 
+.mobile .infoSummary{
+  background-image: url("images/karta.bmp");
 
+}
 
 #pointer {
 
