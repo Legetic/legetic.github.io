@@ -52,6 +52,7 @@ mobile = true;
       backgroundImages[i].src = preload.arguments[i]
     }
   }
+  if(!$body.hasClass('mobile')){
   preload(
     "images/gallery/2011_skidakare_940x360.jpg",
 "images/gallery/beachrunner_940x360.jpg",
@@ -84,6 +85,7 @@ mobile = true;
 "images/gallery/snowmobile_940x360.jpg"
 
   );
+}
   function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
 
@@ -103,9 +105,9 @@ mobile = true;
   return array;
 }
 
-
+if(!$body.hasClass('mobile')){
 shuffle(backgroundImages);
-
+}
 
 slideInterval = setInterval(slide,4000);
 
@@ -264,6 +266,6 @@ $body.addClass('small');
     });
 
 
-    
+
 
 });
