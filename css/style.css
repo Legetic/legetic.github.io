@@ -506,13 +506,14 @@ border-radius: 50%;
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 
+transform-style: preserve-3d;
   text-align: center;
   cursor: pointer;
   z-index: 101;
   position: absolute;
-  bottom:0;
-  border-radius: 3px;
-  margin-top: -45px;
+
+top:calc(100% - 45px);
+
   left: calc(50% - 50px);
   background: #0F61AA;
   height: 50px;
@@ -530,7 +531,11 @@ border-radius: 50%;
 
   line-height: 50px;
 }
+#tabChanger.extended{
+background:#FF5305;
 
+top:0;
+}
 #infoTab{
 -webkit-transform: translate3d(0,0,0);
 -moz-transform: translate3d(0,0,0);
@@ -578,11 +583,7 @@ background: #142433;
 /*.small #infoTab p{
 visibility: hidden;
 }*/
-#tabChanger.extended{
-background:#FF5305;
-margin-top: 0px;
-top:0;
-}
+
 .infoOption{
 
 margin-top: 75px;
@@ -938,7 +939,12 @@ width: 100%;
    position: relative;
 }
 .buffImage{
-
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 2s;
 transition: transform 2s;
 -webkit-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
