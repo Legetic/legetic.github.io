@@ -208,7 +208,6 @@ body.small #innerContent{
 /*this is needed for smallMenu*/
 .small #body.menuExtended{margin-left: 70%;/* margin: 0 !important; */
 
-width:100px;
 }
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
