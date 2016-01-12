@@ -1,3 +1,7 @@
+window.onerror = function(error) {
+    alert(error);
+};
+
 $(window).on("load", function() {
     $('body').addClass('loaded');
 });
@@ -273,7 +277,3 @@ $body.addClass('small');
 
 
 });
-
-window.onerror = function(error) {
-    alert(error);
-};
