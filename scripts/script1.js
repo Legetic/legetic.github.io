@@ -9,7 +9,7 @@ $( document ).ready(function() {
   //DECLARING ALL THE elements
   $header = $("#header");
   $body = $('body');
-  $#body = $('#body');
+  $bodyID = $('#body');
   $rightButton = $("#rightButton");
   $leftButton = $('#leftButton');
 
@@ -231,7 +231,7 @@ $body.addClass('small');
 
       $smallMenu.toggleClass("extended");
       $smallMenu.toggleClass("notExtended");
-      $#body.toggleClass("menuExtended");
+      $bodyID.toggleClass("menuExtended");
 
     });
 
@@ -240,7 +240,7 @@ $body.addClass('small');
 
        $smallMenu.toggleClass("extended");
        $smallMenu.toggleClass("notExtended");
-       $#body.toggleClass("menuExtended");
+       $bodyID.toggleClass("menuExtended");
 
      });
 
@@ -249,7 +249,7 @@ $body.addClass('small');
 
         $smallMenu.toggleClass("extended");
         $smallMenu.toggleClass("notExtended");
-        $#body.toggleClass("menuExtended");
+        $bodyID.toggleClass("menuExtended");
 
       });
 
