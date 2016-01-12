@@ -207,7 +207,7 @@ body.small #innerContent{
   padding-top:0;
 }
 /*this is needed for smallMenu*/
-.small #content.menuExtended #body{
+.small #body.menuExtended{
 
 left:70%;
 margin: 0 !important;
