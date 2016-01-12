@@ -356,6 +356,12 @@ opacity: 0.7;
 }
 
 #mobileMenu{
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
 
   position: fixed;
   z-index:100;
@@ -657,6 +663,7 @@ opacity: 0;
 -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 #infoTab.extended .infoSummary{
   display: block;
 
@@ -668,6 +675,7 @@ opacity: 0;
   opacity: 1;
   display: none;
 }
+
 
 .mobile #findUs .infoSummary{
   background-image: url("../images/karta.bmp");
