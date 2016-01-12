@@ -617,11 +617,12 @@ opacity: 0;
   display: block;
 
 }
-#infoTab.extended #karta{
+.notMobile #infoTab.extended #karta{
   display: block;
 }
 .mobile #karta{
   opacity: 1;
+  display: none;
 }
 
 .mobile #findUs .infoSummary{
@@ -637,9 +638,7 @@ opacity: 0;
 .mobile #findUs svg{
   visibility: hidden;
 }
-.mobile #karta{
-  visibility: hidden;
-}
+
 
 #pointer {
 
