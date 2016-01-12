@@ -43,6 +43,11 @@ background: #F5F5ED;
 /*background: #F2F2F2;*/
 }
 #body{
+  -webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
   /* position: absolute; */
   overflow-x: hidden;
   width: 100vw;
@@ -211,7 +216,11 @@ body.small #innerContent{
 }
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
--webkit-transform: translateZ(0);
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
   height:100%;
 width:0;
 z-index:9999;
@@ -492,7 +501,11 @@ border-radius: 50%;
 }
 
 #infoTab{
--webkit-transform: translateZ(0);
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
 overflow-x: hidden;
 -webkit-overflow-scrolling: touch;
   bottom: 0;
