@@ -43,16 +43,16 @@ background: #F5F5ED;
 /*background: #F2F2F2;*/
 }
 #body{
-  position: absolute;
+  /* position: absolute; */
   overflow-x: hidden;
   width: 100%;
 }
 body.loaded #body{
   -webkit-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
--moz-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
--ms-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
--o-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
-  transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+  -moz-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+  -ms-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+  -o-transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.3s ease-in-out 0.5s;
+  transition: left 0.6s cubic-bezier(.77,0,.175,1),right 0.6s cubic-bezier(.77,0,.175,1),margin 0.4s cubic-bezier(.77,0,.175,1);
 }
 a{
   text-decoration: none !important;
@@ -206,12 +206,7 @@ body.small #innerContent{
   padding-top:0;
 }
 /*this is needed for smallMenu*/
-.small #body.menuExtended{
-
-left:70%;
-margin: 0 !important;
-
-}
+.small #body.menuExtended{margin-left: 70%;/* margin: 0 !important; */}
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
 
