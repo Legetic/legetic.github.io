@@ -27,7 +27,6 @@ $( document ).ready(function() {
 
 
   $menuItem1 = $('.menuItem1');
-  alert("ok");
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 mobile = true;
