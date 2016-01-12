@@ -232,7 +232,7 @@ $body.addClass('small');
       $smallMenu.toggleClass("extended");
       $smallMenu.toggleClass("notExtended");
       $bodyID.toggleClass("menuExtended");
-
+      alert("click");
     });
 
     $closeMenu.click(function(e) {
@@ -241,6 +241,7 @@ $body.addClass('small');
        $smallMenu.toggleClass("extended");
        $smallMenu.toggleClass("notExtended");
        $bodyID.toggleClass("menuExtended");
+       alert("click");
 
      });
 
@@ -250,6 +251,7 @@ $body.addClass('small');
         $smallMenu.toggleClass("extended");
         $smallMenu.toggleClass("notExtended");
         $bodyID.toggleClass("menuExtended");
+        alert("click");
 
       });
 
