@@ -29,7 +29,7 @@ even darker than darkest:#12161F or #142433
 
 /*General section S1*/
 html {
-
+overflow-x: hidden;
 
 }
 body{
@@ -37,7 +37,7 @@ font-family: 'Lato', sans-serif;
 -webkit-font-smoothing: antialiased;
 margin:0;
 line-height: 1.2;
-
+overflow-x: hidden;
 
 background: #F5F5ED;
 /*background: #F2F2F2;*/
