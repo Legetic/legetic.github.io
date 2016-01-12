@@ -622,6 +622,7 @@ opacity: 0;
 
 .mobile #findUs .infoSummary{
   background-image: url("../images/karta.bmp");
+  background-size: cover;
   height: 200px;
 }
 .mobile #findUs .infoSummary h1{
