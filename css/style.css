@@ -211,7 +211,7 @@ body.small #innerContent{
 }
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
-
+-webkit-transform: translateZ(0);
   height:100%;
 width:0;
 z-index:9999;
@@ -492,7 +492,7 @@ border-radius: 50%;
 }
 
 #infoTab{
-
+-webkit-transform: translateZ(0);
 overflow-x: hidden;
 -webkit-overflow-scrolling: touch;
   bottom: 0;
