@@ -570,6 +570,7 @@ margin-top: 75px;
   width:100%;
   height: 100%;
   margin-top: 20px;
+  display: none;
 
 }
 
@@ -610,9 +611,12 @@ opacity: 0;
 -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#infoTab.extended #karta{
+#infoTab.extended .infoSummary{
   display: block;
 
+}
+#infoTab.extended #karta{
+  display: block;
 }
 .mobile #karta{
   opacity: 1;
