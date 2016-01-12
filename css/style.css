@@ -210,7 +210,7 @@ body.small #innerContent{
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
 
-  height:100vh;
+  height:100%;
 width:0;
 z-index:9999;
   background:#0F60AA;
