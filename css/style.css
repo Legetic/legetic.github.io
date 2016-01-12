@@ -598,7 +598,7 @@ fill:white !important;
 #karta{
 
 
-  display: block;
+  display: none;
   position: absolute;
 opacity: 0;
   height:100%;
