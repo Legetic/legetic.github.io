@@ -1,11 +1,11 @@
 $(window).on("load", function() {
-
+    $('body').addClass('loaded');
 });
 
 $( document ).ready(function() {
   var infoTabOpen = false;
   var mobile;
-$('body').addClass('loaded');
+
   //DECLARING ALL THE elements
   $header = $("#header");
   $body = $('body');
