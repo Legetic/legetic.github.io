@@ -232,7 +232,7 @@ $body.addClass('small');
       $smallMenu.toggleClass("extended");
       $smallMenu.toggleClass("notExtended");
       $bodyID.toggleClass("menuExtended");
-      
+
     });
 
     $closeMenu.click(function(e) {
@@ -266,6 +266,9 @@ $body.addClass('small');
       $('html,body').stop().animate({scrollTop:dest}, 1000,'easeInOutExpo');
     });
 
+    $( "#smallMenu" ).draggable({
+      containment: "parent"
+    });
 
 
 
