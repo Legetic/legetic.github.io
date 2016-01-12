@@ -573,7 +573,9 @@ margin-top: 75px;
   display: none;
 
 }
-
+#findUs .infoSummary{
+  height:300px;
+}
 
 
 .infoSummary h1{
