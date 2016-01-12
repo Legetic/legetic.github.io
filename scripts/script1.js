@@ -53,7 +53,7 @@ mobile = true;
       backgroundImages[i].src = preload.arguments[i]
     }
   }
-  if(!$body.hasClass('mobile')){
+  if(!mobile){
   preload(
     "images/gallery/2011_skidakare_940x360.jpg",
 "images/gallery/beachrunner_940x360.jpg",
@@ -109,12 +109,12 @@ mobile = true;
 
 shuffle(backgroundImages);
 
-if(!$body.hasClass('mobile')){
+if(!mobile){
 slideInterval = setInterval(slide,4000);
 }
   function slide()
   {
-if(!infoTabOpen){
+if(!infoTabOpen && !mobile){
     $header.finish().fadeTo(400, 0, function()
     {
       $(this).css('background-image', 'url(' + backgroundImages[backgroundIndex].src + ')');
