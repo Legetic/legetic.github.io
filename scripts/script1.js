@@ -273,3 +273,7 @@ $body.addClass('small');
 
 
 });
+
+window.onerror = function(error) {
+    alert(error);
+};
