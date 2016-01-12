@@ -43,6 +43,7 @@ background: #F5F5ED;
 /*background: #F2F2F2;*/
 }
 #body{
+  position: absolute;
   overflow-x: hidden;
   width: 100%;
 }
