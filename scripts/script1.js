@@ -1,6 +1,4 @@
-window.onerror = function(error) {
-    alert(error);
-};
+
 
 $(window).on("load", function() {
     $('body').addClass('loaded');
