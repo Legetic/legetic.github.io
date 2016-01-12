@@ -43,11 +43,8 @@ background: #F5F5ED;
 /*background: #F2F2F2;*/
 }
 #body{
-  -webkit-transform: translate3d(0,0,0);
--moz-transform: translate3d(0,0,0);
--o-transform: translate3d(0,0,0);
--ms-transform: translate3d(0,0,0);
-transform: translate3d(0,0,0);
+  z-index: -1;
+  
   /* position: absolute; */
   overflow-x: hidden;
   width: 100vw;
