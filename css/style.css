@@ -610,6 +610,10 @@ opacity: 0;
 -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+#infoTab.extended #karta{
+  display: block;
+
+}
 .mobile #karta{
   opacity: 1;
 }
