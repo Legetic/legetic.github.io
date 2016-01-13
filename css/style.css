@@ -912,7 +912,7 @@ margin: 0;
 -o-transition: all 0.3s ease-in-out;
   transition: transform .2s ease-out;
 }
-.responsiveButton:hover:before{transform: scaleY(1);}
+.responsiveButton:hover :before{transform: scaleY(1);}
 
 .responsiveButton:hover a{
   color:white !important;
