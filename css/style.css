@@ -538,6 +538,9 @@ transform: translateY(450px);
 .mobile.small #tabChanger{
   transform: translateY(300px);
 }
+.mobile.small #tabChanger.extended{
+  transform: translateY(0%);
+}
 #tabChanger h4{
   margin: 0;
 
