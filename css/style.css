@@ -239,7 +239,7 @@ width:80%;
 margin-left: 0;
 z-index:9999;
   background:#142433;
-  transform: translateX(0%);
+  transform: translateX(-100%);
   position:fixed;
 
 
@@ -289,7 +289,7 @@ z-index:9999;
   background-color: #12161F;
 }
 .small #smallMenu.extended{
-  transform: translateX(80%);
+  transform: translateX(0%);
 }
 
 /*
