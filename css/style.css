@@ -866,7 +866,7 @@ left:calc(50% - 25px);
 position: absolute;
 bottom:0;
   text-align: center;
-
+z-index: 1;
   height: 36px;
   width: 100%;
   border:1px solid #FF5305;
@@ -874,6 +874,7 @@ bottom:0;
 
 
 }
+
 .responsiveButton a{
   -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
