@@ -521,7 +521,7 @@ transform-style: preserve-3d;
   cursor: pointer;
   z-index: 101;
   position: absolute;
-transform: translateY(99%);
+transform: translateY(450px);
 
 
   left: calc(50% - 50px);
@@ -534,6 +534,9 @@ transform: translateY(99%);
     -o-transition: all 0.4s cubic-bezier(.77,0,.175,1);
     transition: all 0.4s cubic-bezier(.77,0,.175,1);
 
+}
+.mobile.small #tabChanger{
+  transform: translateY(300px);
 }
 #tabChanger h4{
   margin: 0;
