@@ -235,7 +235,8 @@ body.small #innerContent{
 -ms-transform: translate3d(0,0,0);
 transform: translate3d(0,0,0);
   height:100%;
-width:0;
+width:80%;
+margin-left: 0;
 z-index:9999;
   background:#142433;
   margin:0;
@@ -288,7 +289,7 @@ z-index:9999;
   background-color: #12161F;
 }
 .small #smallMenu.extended{
-  width:80%;
+  margin-left: -100%;
 }
 
 /*
