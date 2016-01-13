@@ -521,18 +521,18 @@ transform-style: preserve-3d;
   cursor: pointer;
   z-index: 101;
   position: absolute;
+transform: translateY(99%);
 
-top:calc(100% - 45px);
 
   left: calc(50% - 50px);
   background: #0F61AA;
   height: 50px;
   width:100px;
-  -webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    -moz-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    -ms-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    -o-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    transition: all 0.4s cubic-bezier(.77,0,.175,1);
 
 }
 #tabChanger h4{
@@ -544,7 +544,7 @@ top:calc(100% - 45px);
 #tabChanger.extended{
 background:#FF5305;
 
-top:0;
+transform: translateY(0%);
 }
 #infoTab{
 -webkit-transform: translate3d(0,0,0);
