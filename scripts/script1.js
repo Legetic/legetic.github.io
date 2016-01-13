@@ -268,9 +268,7 @@ $body.addClass('small');
       $('html,body').stop().animate({scrollTop:dest}, 1000,'easeInOutExpo');
     });
 
-    $( "#smallMenu" ).draggable({
-      containment: "parent"
-    });
+    
 
 
 
