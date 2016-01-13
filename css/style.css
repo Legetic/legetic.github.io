@@ -559,7 +559,8 @@ overflow-x: hidden;
 
   width: 100%;
   height: 100%;
-  top:99%;
+
+  transform: translateY(99%);
 
   padding-left: 45px;
   padding-right: 45px;
@@ -567,11 +568,11 @@ background: #142433;
   /*background:#12161F;
   background:#101C26;*/
 
-  -webkit-transition: top 0.3s ease-in-out;
--moz-transition: top 0.3s ease-in-out;
--ms-transition: top 0.3s ease-in-out;
--o-transition: top 0.3s ease-in-out;
-  transition: top 0.3s ease-in-out;
+  -webkit-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    -moz-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    -ms-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    -o-transition: all 0.4s cubic-bezier(.77,0,.175,1);
+    transition: all 0.4s cubic-bezier(.77,0,.175,1);
 }
 
 .small #infoTab{
@@ -581,7 +582,7 @@ background: #142433;
 }
 #infoTab.extended{
 
-  top: 0%;
+  transform: translateY(0%);
 }
 #infoTab p{
   color:white;
