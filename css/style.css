@@ -30,6 +30,8 @@ even darker than darkest:#12161F or #142433
 /*General section S1*/
 html {
 overflow-x: hidden;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
 
 }
 ::-moz-selection {
@@ -326,6 +328,7 @@ z-index:9999;
   left:100%;
 
   opacity: 0;
+
 
   -webkit-transition: opacity 0.3s ease-in-out; /* Safari */
     transition: opacity 0.3s ease-in-out;
@@ -901,6 +904,10 @@ margin: 0;
   background: #FF5305;
   transform: scaleY(0);
   transform-origin: 0 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
   transition: transform .2s ease-out;
 }
 .responsiveButton:hover:before{transform: scaleY(1);}
