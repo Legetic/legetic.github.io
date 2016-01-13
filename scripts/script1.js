@@ -1,4 +1,6 @@
-
+$(function() {
+    FastClick.attach(document.body);
+});
 
 $(window).on("load", function() {
     $('body').addClass('loaded');
@@ -268,7 +270,7 @@ $body.addClass('small');
       $('html,body').stop().animate({scrollTop:dest}, 1000,'easeInOutExpo');
     });
 
-    
+
 
 
 
