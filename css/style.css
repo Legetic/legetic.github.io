@@ -1051,7 +1051,7 @@ visibility: hidden;
     min-height: 190px;
   }
   .notMobile .buffButtonWrapper{
-    min-height: 350px;
+    min-height: 200px;
   }
 }
 /*TESTAREA*/
