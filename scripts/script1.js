@@ -36,12 +36,7 @@ $( document ).ready(function() {
   $(document).ready(function() {
       $('#main-content').fadeIn();
   });
-  /**
- * jQuery.browser.mobile (http://detectmobilebrowser.com/)
- *
- * jQuery.browser.mobile will be true if the browser is a mobile device
- *
- **/
+
 
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 mobile = true;
