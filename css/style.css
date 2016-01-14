@@ -252,7 +252,7 @@ z-index:9999;
 -moz-transform: translateX(100%);
 -o-transform: translateX(100%);
 transform: translateX(100%);
-  transform: translateX(-100%) !important;
+  transform: translateX(-100%);
   position:fixed;
 
 
