@@ -29,7 +29,7 @@ $( document ).ready(function() {
   $content = $("#content");
 
   $smallMenu_li = $('#smallMenu li');
-
+  $scroll = $('.scroll');
 
   $menuItem1 = $('.menuItem1');
 
@@ -266,7 +266,7 @@ $body.addClass('small');
 
       });
 
-      $(".scroll").click(function(event){
+      $scroll.click(function(event){
       event.preventDefault();
       //calculate destination place
       var dest=0;
