@@ -1,6 +1,4 @@
-$(function() {
-    FastClick.attach(document.body);
-});
+
 
 $(window).on("load", function() {
     $('body').addClass('loaded');
@@ -10,6 +8,9 @@ $( document ).ready(function() {
   var infoTabOpen = false;
   var mobile;
 
+  $(function() {
+      FastClick.attach(document.body);
+  });
   //DECLARING ALL THE elements
   $header = $("#header");
   $body = $('body');
