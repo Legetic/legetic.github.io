@@ -237,21 +237,23 @@ body.small #innerContent{
 
 /*smallMenu is a menu that is used when the screen is small*/
 #smallMenu{
--webkit-transform: translate3d(0,0,0);
--moz-transform: translate3d(0,0,0);
--o-transform: translate3d(0,0,0);
--ms-transform: translate3d(0,0,0);
-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+transform-style: preserve-3d;
   height:100%;
 width:80%;
 margin-left: 0;
 z-index:9999;
   background:#142433;
-  -ms-transform: translateX(100%);
--webkit-transform: translateX(100%);
--moz-transform: translateX(100%);
--o-transform: translateX(100%);
-transform: translateX(100%);
+  -ms-transform: translateX(-100%);
+-webkit-transform: translateX(-100%);
+-moz-transform: translateX(-100%);
+-o-transform: translateX(-100%);
+transform: translateX(-100%);
   transform: translateX(-100%);
   position:fixed;
 
@@ -540,6 +542,10 @@ transform-style: preserve-3d;
   cursor: pointer;
   z-index: 101;
   position: absolute;
+  -webkit-transform: translateY(450px);
+  -moz-transform: translateY(450px);
+  -o-transform: translateY(450px);
+  -ms-transform: translateY(450px);
 transform: translateY(450px);
 
 
@@ -555,9 +561,17 @@ transform: translateY(450px);
 
 }
 .mobile.small #tabChanger{
+  -webkit-transform: translateY(300px);
+  -moz-transform: translateY(300px);
+  -o-transform: translateY(300px);
+  -ms-transform: translateY(300px);
   transform: translateY(300px);
 }
 .mobile.small #tabChanger.extended{
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
 #tabChanger h4{
@@ -569,14 +583,20 @@ transform: translateY(450px);
 #tabChanger.extended{
 background:#FF5305;
 
+-webkit-transform: translateY(0%);
+-moz-transform: translateY(0%);
+-o-transform: translateY(0%);
+-ms-transform: translateY(0%);
 transform: translateY(0%);
 }
 #infoTab{
--webkit-transform: translate3d(0,0,0);
--moz-transform: translate3d(0,0,0);
--o-transform: translate3d(0,0,0);
--ms-transform: translate3d(0,0,0);
-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+transform-style: preserve-3d;
 overflow-x: hidden;
 -webkit-overflow-scrolling: touch;
   bottom: 0;
@@ -585,6 +605,10 @@ overflow-x: hidden;
   width: 100%;
   height: 100%;
 
+  -webkit-transform: translateY(99%);
+  -moz-transform: translateY(99%);
+  -o-transform: translateY(99%);
+  -ms-transform: translateY(99%);
   transform: translateY(99%);
 
   padding-left: 45px;
@@ -607,6 +631,10 @@ background: #142433;
 }
 #infoTab.extended{
 
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
 #infoTab p{
@@ -988,6 +1016,7 @@ width: 100%;
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 transform-style: preserve-3d;
+
   -webkit-transition: -webkit-transform 2s;
 transition: transform 2s;
 -webkit-transition-timing-function: cubic-bezier(0.070, 0.175, 0.170, 0.955);
