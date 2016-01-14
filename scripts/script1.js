@@ -34,7 +34,7 @@ $( document ).ready(function() {
   $menuItem1 = $('.menuItem1');
 
   $(document).ready(function() {
-      $('#main-content').fadeIn();
+      $('#content').fadeIn();
   });
 
 
