@@ -33,9 +33,6 @@ $( document ).ready(function() {
 
   $menuItem1 = $('.menuItem1');
 
-  $(document).ready(function() {
-      $('#content').fadeIn();
-  });
 
 
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
@@ -59,8 +56,8 @@ mobile = true;
   var backgroundImages = new Array();
   function preload() {
     for (i = 0; i < preload.arguments.length; i++) {
-      backgroundImages[i] = new Image()
-      backgroundImages[i].src = preload.arguments[i]
+      backgroundImages[i] = new Image();
+      backgroundImages[i].src = preload.arguments[i];
     }
   }
   if(!mobile){
@@ -93,9 +90,7 @@ mobile = true;
 "images/gallery/old_couple_skiing_940x360.jpg",
 "images/gallery/old_couple_stretching_940x360.jpg",
 "images/gallery/old_lady_940x360.jpg",
-"images/gallery/snowmobile_940x360.jpg"
-
-  );
+"images/gallery/snowmobile_940x360.jpg");
 }
   function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -225,12 +220,12 @@ $body.addClass('small');
 
    $menuItem1.click(function(e) {
      if(!$infoTab.hasClass("extended")){
-       $infoTab.addClass("extended")
+       $infoTab.addClass("extended");
      }
      if(!$tabChanger.hasClass("extended")){
        infoTabOpen = true;
        $tabChangerText.text('Stäng');
-       $tabChanger.addClass("extended")
+       $tabChanger.addClass("extended");
      }
 
 
