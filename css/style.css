@@ -447,7 +447,7 @@ body:not(.small) #menuSubstitute{
   height: 40px;
   left: 10px;
   top: calc(50% - 20px);
-  padding-right: 7px;
+  padding-right: 10px;
   border-right: 1px solid #d8d8d8;
 }
 
