@@ -77,7 +77,7 @@ body.loaded #body{
   -moz-transform: translateX(250px);
   -o-transform: translateX(250px);
   transform: translateX(250px);
-  
+
 }
 a{
   text-decoration: none !important;
@@ -244,6 +244,9 @@ body.small #innerContent{
   transform-style: preserve-3d;
   height:calc(100% + 60px);
   width: 250px;
+  max-width: 250px;
+  /*If max width doesn't solve it it has something to do with the translates and the way iphone 4 safari sees % of screen. try changing % to actual px. Right now i am too tired though.*/
+  /*Stretch fix*/
   margin-left: 0;
   z-index:9999;
   background:#142433;
