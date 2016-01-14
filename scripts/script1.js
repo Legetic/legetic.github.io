@@ -43,7 +43,7 @@ mobile = true;
     $body.addClass('notMobile');
   }
 
-  if(Modernizr.mq('(max-width: 992px)')){
+  if($(window).width() < 992){
   $body.addClass('small');
   }else{
     $body.removeClass('small');
@@ -190,7 +190,7 @@ if(!infoTabOpen && !mobile){
   $('#garanti').resizeToParentLess();
 
 $(window).resize(function() {
-  if(Modernizr.mq('(max-width: 992px)')){
+  if($(window).width() < 992){
 $body.addClass('small');
   }else{
     $body.removeClass('small');
