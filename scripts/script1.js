@@ -272,12 +272,7 @@ $body.addClass('small');
     });
 
 
-    var latlngbounds = new google.maps.LatLngBounds();
-    latlng.each(function(n){
-       latlngbounds.extend(n);
-    });
-    map.setCenter(latlngbounds.getCenter());
-    map.fitBounds(latlngbounds); 
+
 
 
 });
