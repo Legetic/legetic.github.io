@@ -214,7 +214,7 @@ $body.addClass('small');
         $tabChangerText.text('Stäng');
     } else {
       infoTabOpen = false;
-        $tabChangerText.text('Om oss');
+        $tabChangerText.text('Info');
     }
    });
 
