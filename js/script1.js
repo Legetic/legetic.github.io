@@ -17,7 +17,6 @@ $( document ).ready(function() {
     $body.addClass('mobile');
   }else{
     mobile = false;
-    $body.addClass('notMobile');
   }
 
 
