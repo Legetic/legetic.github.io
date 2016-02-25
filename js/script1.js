@@ -5,6 +5,9 @@ $(window).on("load", function() {
 
 
 $( document ).ready(function() {
+  var $body = $("body");
+
+
   $(function() {
       FastClick.attach(document.body);
   });
@@ -23,5 +26,8 @@ mobile = true;
   }else{
     $body.removeClass('small');
   }
+
+swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
+
 
 });
