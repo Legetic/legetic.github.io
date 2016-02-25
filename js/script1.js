@@ -26,7 +26,7 @@ $( document ).ready(function() {
   }else{
     $body.removeClass('small');
   }
-
+/*
   swal({   title: "Error!",
   text: "Here's my error message!",
   type: "error",
@@ -36,5 +36,5 @@ $( document ).ready(function() {
   $( "#center-box" ).on( "click", function() {
     console.log( "rip" );
   });
-
+*/
 });
