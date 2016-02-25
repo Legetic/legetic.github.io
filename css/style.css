@@ -21,12 +21,16 @@ html{
 
 #center-box{
   position: absolute;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  left:calc(50% - 150px);
-  top: calc(50% - 150px);
+
+  left: 50%;
+  top: 50%;
+
   background: black;
+
+  transform: translate(-50%, -50%);
+
+  width: 40%;
+  height: 50%;
 
 /*
   -webkit-transform: ;
@@ -34,4 +38,9 @@ html{
 -ms-transform: ;
 -o-transform: ;
 transform: ;*/
+}
+
+.loaded #center-box{
+transform: translate(50%,50%);
+
 }
