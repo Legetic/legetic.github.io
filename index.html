@@ -17,20 +17,20 @@
 <script>
 
 
-progressJs().setOptions({overlayMode: true, theme: 'blueOverlay'}).start().autoIncrease(4, 500);
+progressJs("center-box").setOptions({overlayMode: true, theme: 'blueOverlay'}).start().autoIncrease(4, 500);
 
 if(window.attachEvent) {
-    window.attachEvent('onload', function(){ progressJs().end(); });
+    window.attachEvent('onload', function(){ progressJs("center-box").end(); });
 } else {
     if(window.onload) {
         var curronload = window.onload;
         var newonload = function() {
             curronload();
-            progressJs().end();
+            progressJs("center-box").end();
         };
         window.onload = newonload;
     } else {
-        window.onload = function(){ progressJs().end(); };
+        window.onload = function(){ progressJs("center-box").end(); };
     }
 }
 
@@ -61,7 +61,7 @@ if(window.attachEvent) {
 
 
 </script>
-<div id="targetElement"></div>
+
 <div id="container"></div>
 <div id="center-box"></div>
 
