@@ -11,6 +11,8 @@ http://brunoquintela.com/
 http://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/#streetview
 https://images.weserv.nl/
 http://t4t5.github.io/sweetalert/
+http://tympanus.net/codrops/2014/04/09/how-to-create-a-circular-progress-button/
+https://www.freshdesignweb.com/jquery-css3-loading-progress-bar/
 
 
 TUTORIAL
