@@ -15,7 +15,28 @@
   <body>
     <script src="js/vendor/progress.js"></script>
 <script>
-progressJs().start();
+
+      progressJs().setOptions({overlayMode: true, theme: 'blueOverlay'}).start().autoIncrease(4, 500);
+
+      if(window.attachEvent) {
+          window.attachEvent('onload', function(){ progressJs().end(); });
+      } else {
+          if(window.onload) {
+              var curronload = window.onload;
+              var newonload = function() {
+                  curronload();
+                  progressJs().end();
+              };
+              window.onload = newonload;
+          } else {
+              window.onload = function(){ progressJs().end(); };
+          }
+      }
+
+    
+      }(document, 'script'));
+
+
 </script>
 <div id="targetElement"></div>
 <div id="container"></div>
