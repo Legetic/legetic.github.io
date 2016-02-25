@@ -6,11 +6,11 @@ http://demo.bonefishcode.com/joanna/demo/slideshow/
 
 Saker jag ska ha
 http://getbootstrap.com/getting-started/#download
-https://html5boilerplate.com/
 http://smoothstate.com/
 http://brunoquintela.com/
 http://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/#streetview
 https://images.weserv.nl/
+http://t4t5.github.io/sweetalert/
 
 
 TUTORIAL

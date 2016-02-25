@@ -21,6 +21,7 @@ html{
 
 #center-box{
   position: absolute;
+  cursor: pointer;
   height: 300px;
   width: 300px;
   left:calc(50% - 150px);
