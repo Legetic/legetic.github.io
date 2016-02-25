@@ -1,4 +1,6 @@
 
+progressJs("#targetElement").start();
+
 $(window).on("load", function() {
   $('body').addClass('loaded');
 });
