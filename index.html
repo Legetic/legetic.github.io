@@ -8,11 +8,13 @@
     <title>Fint</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
-  
     <link href="css/sweet/sweetalert.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="js/vendor/pace.js"></script>
+  <link href="css/pace-theme-loading-bar.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -20,35 +22,7 @@
     <div id="body">
 
 <script>
-$.ajax({
-  xhr: function()
-  {
-    var xhr = new window.XMLHttpRequest();
-//Upload progress
-xhr.upload.addEventListener("progress", function(evt){
-  if (evt.lengthComputable) {
-    var percentComplete = evt.loaded / evt.total;
-    //Do something with upload progress
-    console.log(percentComplete);
-  }
-}, false);
-//Download progress
-xhr.addEventListener("progress", function(evt){
-  if (evt.lengthComputable) {
-    var percentComplete = evt.loaded / evt.total;
-    //Do something with download progress
-    console.log(percentComplete);
-  }
-}, false);
-return xhr;
-},
-type: 'GET',
-url: "/",
-data: {},
-success: function(data){
-  //Do something success-ish
-}
-});
+
 
 
 </script>
