@@ -31,6 +31,7 @@
       ignoreURLs: []
     }
   };
+var $centerBox = $("#center-box");
 
   now = function() {
     var _ref;
@@ -294,6 +295,7 @@
       if (!this.lastRenderedProgress || this.lastRenderedProgress | 0 !== this.progress | 0) {
         el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
         console.log(this.progress);
+        $centerBox.css("width",this.progress + "%");
         if (this.progress >= 100) {
           progressStr = '99';
         } else {
