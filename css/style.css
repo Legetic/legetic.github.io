@@ -24,12 +24,12 @@ html{
 
   left: 50%;
   top: 50%;
-height: 10px;
+height: 1px;
   background: black;
+  overflow: hidden;
 
-  transform: translate(-50%, -50%);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  transform: translate3d(-50%, -50%, 0);
+
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -37,15 +37,28 @@ height: 10px;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 
-/*
-  -webkit-transform: ;
--moz-transform: ;
--ms-transform: ;
--o-transform: ;
-transform: ;*/
+
+  -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+
+}
+#inner-wrapper{
+
+}
+#outer-wrapper{
+
 }
 
-.loaded #center-box{
+#procent{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+
+#center-box.extended{
 
 
 }
