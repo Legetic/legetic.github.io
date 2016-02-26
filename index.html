@@ -11,14 +11,37 @@
     <link href="css/loadingbar.css" rel="stylesheet">
     <link href="css/sweet/sweetalert.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="js/vendor/jquery.loadingbar.js"></script>
   </head>
   <body>
+
     <div id="body">
 
 <script>
+$(".ajax-call").loadingbar({
+  target: "#loadingbar-frame",
+  replaceURL: false,
+  direction: "right",
+
+  /* Default Ajax Parameters.  */
+  async: true,
+  complete: function(xhr, text) {},
+  cache: true,
+  error: function(xhr, text, e) {},
+  global: true,
+  headers: {},
+  statusCode: {},
+  success: function(data, text, xhr) {},
+  dataType: "html",
+  done: function(data) {}
+});
+
 
 
 </script>
+<a href="artofsurvival.me" class="ajax-call">..</a>
+<div id="loadingbar-frame"></div>
 
 <div id="container"></div>
 <div id="center-box"></div>
@@ -30,7 +53,7 @@
     <script type='application/javascript' src='js/vendor/fastclick.js'></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/script1.js"></script>
-    <script src="js/vendor/jquery.loadingbar.js"></script>
+
     <script src="js/vendor/sweetalert.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </div>
