@@ -8,35 +8,14 @@
     <title>Fint</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/progressjs.css" rel="stylesheet">
+    <link href="css/loadingbar.css" rel="stylesheet">
     <link href="css/sweet/sweetalert.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <div id="body">
-    <script src="js/vendor/progress.js"></script>
+
 <script>
-
-
-progressJs().setOptions({overlayMode: true, theme: 'blueOverlay'}).start().autoIncrease(4, 500);
-
-if(window.attachEvent) {
-    window.attachEvent('onload', function(){ progressJs().end(); });
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function() {
-            curronload();
-            progressJs().end();
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = function(){ progressJs().end(); };
-    }
-}
-
-
-
 
 
 </script>
@@ -51,7 +30,7 @@ if(window.attachEvent) {
     <script type='application/javascript' src='js/vendor/fastclick.js'></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/script1.js"></script>
-
+    <script src="js/vendor/jquery.loadingbar.js"></script>
     <script src="js/vendor/sweetalert.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </div>
