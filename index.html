@@ -20,29 +20,39 @@
     <div id="body loadingbar-frame">
 
 <script>
-$(".ajax-call").loadingbar({
-  target: "#loadingbar-frame",
-  replaceURL: false,
-  direction: "right",
-
-  /* Default Ajax Parameters.  */
-  async: true,
-  complete: function(xhr, text) {},
-  cache: true,
-  error: function(xhr, text, e) {},
-  global: true,
-  headers: {},
-  statusCode: {},
-  success: function(data, text, xhr) {},
-  dataType: "html",
-  done: function(data) {}
+$.ajax({
+  xhr: function()
+  {
+    var xhr = new window.XMLHttpRequest();
+//Upload progress
+xhr.upload.addEventListener("progress", function(evt){
+  if (evt.lengthComputable) {
+    var percentComplete = evt.loaded / evt.total;
+    //Do something with upload progress
+    console.log(percentComplete);
+  }
+}, false);
+//Download progress
+xhr.addEventListener("progress", function(evt){
+  if (evt.lengthComputable) {
+    var percentComplete = evt.loaded / evt.total;
+    //Do something with download progress
+    console.log(percentComplete);
+  }
+}, false);
+return xhr;
+},
+type: 'POST',
+url: "/",
+data: {},
+success: function(data){
+  //Do something success-ish
+}
 });
 
 
-
 </script>
-<a href="https://artofsurvival.me/" class="ajax-call"></a>
-<div ></div>
+
 
 <img src="http://vignette4.wikia.nocookie.net/trekcreative/images/7/78/Galaxy_Map-Huge.jpg/revision/latest?cb=20091230105332"></img>
 <img src="http://vignette4.wikia.nocookie.net/trekcreative/images/7/78/Galaxy_Map-Huge.jpg/revision/latest?cb=20091230105332"></img>
