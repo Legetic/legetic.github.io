@@ -23,10 +23,12 @@ html{
 
   left: 50%;
   top: 50%;
+<<<<<<< HEAD
       width: calc(100% - 100px);
 }
 
 #center-box{
+
 
 height: 1px;
   background: black;
@@ -52,6 +54,11 @@ height: 1px;
 #inner-wrapper{
 
 }
+
+#outer-wrapper{
+
+}
+
 
 #procent{
   position: absolute;
