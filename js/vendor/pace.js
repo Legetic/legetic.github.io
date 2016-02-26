@@ -296,6 +296,8 @@
         el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
 //hej här la jag till
         $("#center-box").css("width",this.progress + "%");
+        
+        $("#procent").text(String(Math.round(this.progress)) + "%");
         if (this.progress >= 100) {
           progressStr = '99';
         } else {
