@@ -11,13 +11,12 @@ $( document ).ready(function() {
 
   var cookieValue = $( $.parseHTML(Cookies.get('test')) ).text();
 
-if(cookieValue != null){
-  alert(cookieValue);
-}else{
+if(cookieValue == null || cookieValue == undefined){
   var svar = prompt("skriv in ditt namn");
   Cookies.set("test", svar);
+}else{
+  alert(cookieValue);
 }
-
 
 
 
