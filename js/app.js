@@ -9,6 +9,16 @@ $(window).on("load", function() {
 $( document ).ready(function() {
   var $body = $("body");
 
+  var cookieValue = Cookies.get('test');
+
+if(cookieValue != undefined){
+  alert(cookieValue);
+}
+
+  var svar = prompt("skriv in ditt namn");
+$.cookie("test", svar);
+
+
 
   $(function() {
     FastClick.attach(document.body);
