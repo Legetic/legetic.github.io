@@ -6,11 +6,15 @@ body{
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 
-
-
-
-
 }
+div{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 h1{
 
 
@@ -36,7 +40,6 @@ p{
 
 #body{
   z-index: -2;
-
   /* position: absolute; */
   overflow-x: hidden;
   width: 100vw;
@@ -47,8 +50,10 @@ html{
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
+
 #outer-wrapper{
   position: relative;
+
   /* width: 100%; */
   height: 100vh;
   padding: 40px;
@@ -59,52 +64,40 @@ html{
   overflow: hidden;
 }
 #upper-veil{
-
 position: absolute;
-
 top: 0;
-
 width: 100%;
-
 height: 50%;
-
 background: white;
-
 z-index: 2;
+
 }
 #lower-veil{
-
 position: absolute;
-
 bottom: -1px;
-
 width: 100%;
-
 height: 50%;
-
 background: white;
-
 z-index: 2;
+
 }
 
 #center-box{
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1452716726610-30ed68426a6b?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background: url("https://images.unsplash.com/photo-1452716726610-30ed68426a6b?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") black;
   background-size: cover;
   overflow: hidden;
   z-index: 1;
+
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);/* Other transform properties here */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
+
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -121,9 +114,47 @@ z-index: 2;
 }
 
 #procent{
+  text-align: center;
+    z-index: 3;
+    color: black;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+#load-status{
+  text-align: center;
+  z-index: 3;
+  color: black;
+  display: block;
   position: absolute;
-  bottom:0;
-  right:0;
+  width: 100%;
+  bottom:50%;
+
+  -webkit-animation: flickerAnimation 1.5s infinite;
+   -moz-animation: flickerAnimation 1.5s infinite;
+   -o-animation: flickerAnimation 1.5s infinite;
+    animation: flickerAnimation 1.5s infinite;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
 }
 
 #upper-veil.extended{

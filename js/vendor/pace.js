@@ -297,18 +297,19 @@
 //hej här la jag till
         $("#center-box").css("width",this.progress + "%");
 
-        $("#procent").text(String(Math.round(this.progress)) + "%");
+        $("#procent").text(String(Math.floor(this.progress)) + "%");
         if (this.progress >= 100) {
           progressStr = '99';
-          console.log("Done");
+
+
           setTimeout(function(){
 
             $("#upper-veil").addClass("extended");
             $("#lower-veil").addClass("extended");
 
-            $( "#procent" ).fadeOut( "slow", function() {
-              $("#procent").css("display", "none");
-            });
+              $("#procent").remove();
+              $("#load-status").remove();
+
           }, 500);
 
         } else {
