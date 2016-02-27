@@ -9,9 +9,9 @@ $(window).on("load", function() {
 $( document ).ready(function() {
   var $body = $("body");
 
-  var cookieValue = $( $.parseHTML(Cookies.get('test')) ).text();;
+  var cookieValue = $( $.parseHTML(Cookies.get('test')) ).text();
 
-if(cookieValue != undefined){
+if(cookieValue != null){
   alert(cookieValue);
 }else{
   var svar = prompt("skriv in ditt namn");
