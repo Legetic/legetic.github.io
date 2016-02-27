@@ -86,6 +86,13 @@ height: 1px;
     transition: all 0.4s;
   }
 
+#inner-wrapper{
+
+    -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+     -ms-transform: translate3d(0, 0, 0);
+     transform: translate3d(0, 0, 0);
+}
 
 #procent{
   position: absolute;
