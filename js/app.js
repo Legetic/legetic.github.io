@@ -16,7 +16,7 @@ if(cookieValue != undefined){
 }
 
   var svar = prompt("skriv in ditt namn");
-$.cookie("test", svar);
+  Cookies.set("test", svar);
 
 
 
