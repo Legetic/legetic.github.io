@@ -9,14 +9,16 @@ $(window).on("load", function() {
 $( document ).ready(function() {
   var $body = $("body");
 
-  var cookieValue = Cookies.get('test');
+  var cookieValue = $( $.parseHTML(Cookies.get('test')) ).text();;
 
 if(cookieValue != undefined){
   alert(cookieValue);
-}
-
+}else{
   var svar = prompt("skriv in ditt namn");
   Cookies.set("test", svar);
+}
+
+
 
 
 
