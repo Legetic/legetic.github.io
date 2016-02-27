@@ -53,37 +53,63 @@ html{
   height: 100vh;
   padding: 40px;
   display: flex;
-    /* Vertical align: */
-    align-items: center;
+  box-sizing: border-box;
+  /* Vertical align: */
+  align-items: center;
+  overflow: hidden;
+}
+#upper-veil{
+
+position: absolute;
+
+top: 0;
+
+width: 100%;
+
+height: 50%;
+
+background: white;
+
+z-index: 2;
+}
+#lower-veil{
+
+position: absolute;
+
+bottom: -1px;
+
+width: 100%;
+
+height: 50%;
+
+background: white;
+
+z-index: 2;
 }
 
 #center-box{
-height: 1px;
+  height: 100%;
   background: url("https://images.unsplash.com/photo-1452716726610-30ed68426a6b?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   background-size: cover;
   overflow: hidden;
+  z-index: 1;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
   -webkit-transform: translate3d(0, 0, 0);
-   -moz-transform: translate3d(0, 0, 0);
-   -ms-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-  /* Other transform properties here */
-
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);/* Other transform properties here */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-
-
   -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
   }
 
 #inner-wrapper{
@@ -100,8 +126,30 @@ height: 1px;
   right:0;
 }
 
-#center-box.extended{
-height: 100%;
+#upper-veil.extended{
+  -webkit-transform: translateY(-100%);
+   -moz-transform: translateY(-100%);
+   -ms-transform: translateY(-100%);
+   transform: translateY(-100%);
+
+-webkit-transition: all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+   -moz-transition: all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+     -o-transition: all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        transition: all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950); /* easeInOutSine */
+
+-webkit-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+   -moz-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+     -o-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); /* easeInOutSine */
+
+}
+
+#lower-veil.extended{
+
+  -webkit-transform: translateY(100%);
+   -moz-transform: translateY(100%);
+   -ms-transform: translateY(100%);
+   transform: translateY(100%);
 
 -webkit-transition: all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
    -moz-transition: all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950);

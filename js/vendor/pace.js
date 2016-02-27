@@ -302,7 +302,10 @@
           progressStr = '99';
           console.log("Done");
           setTimeout(function(){
-            $("#center-box").addClass("extended");
+
+            $("#upper-veil").addClass("extended");
+            $("#lower-veil").addClass("extended");
+
             $( "#procent" ).fadeOut( "slow", function() {
               $("#procent").css("display", "none");
             });
