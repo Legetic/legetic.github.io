@@ -3,14 +3,17 @@ http://2016.makemepulse.com/ RGBSPLIT
 https://rocket-league.com/central
 http://demo.bonefishcode.com/joanna/demo/slideshow/
 http://bemat-admin.cerocreativo.cl/v1.0.1/light/
+https://www.madeinhaus.com/work/featured
+http://brunoquintela.com/ BONERSITE
+http://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/#streetview
 
-https://www.getmdl.io/components/index.html#buttons-section
+
 
 Saker jag ska ha
 http://getbootstrap.com/getting-started/#download
 http://smoothstate.com/
-http://brunoquintela.com/ BONERSITE
-http://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/#streetview
+https://www.getmdl.io/components/index.html#buttons-section
+
 https://images.weserv.nl/
 http://t4t5.github.io/sweetalert/
 http://tympanus.net/codrops/2014/04/09/how-to-create-a-circular-progress-button/
@@ -24,3 +27,25 @@ https://aerotwist.com/tutorials/getting-started-with-three-js/
 
 
 https://wrapbootstrap.com/
+
+
+
+@-webkit-keyframes haus{0%{-webkit-transform:translateY(0);transform:translateY(0)}
+49.999%{-webkit-transform:translateY(-34px);transform:translateY(-34px)}
+50%{-webkit-transform:translateY(34px);transform:translateY(34px)}
+100%{-webkit-transform:translateY(0);transform:translateY(0)}
+}
+@keyframes haus{0%{-webkit-transform:translateY(0);transform:translateY(0)}
+49.999%{-webkit-transform:translateY(-34px);transform:translateY(-34px)}
+50%{-webkit-transform:translateY(34px);transform:translateY(34px)}
+100%{-webkit-transform:translateY(0);transform:translateY(0)}
+}
+
+where standard is: -webkit-transform: translateY(0);
+    transform: translateY(0);
+
+and hover is:
+
+    -webkit-animation: haus .4s cubic-bezier(.645,.045,.355,1);
+    animation: haus .4s cubic-bezier(.645,.045,.355,1);
+
