@@ -313,6 +313,11 @@
 
               $("#procent").remove();
               $("#load-status").remove();
+              setTimeout(function() {
+                $("#upper-veil").remove();
+                $("#lower-veil").remove();
+              }, 1000);
+
 
           }, 500);
 
@@ -337,6 +342,26 @@
   Events = (function() {
     function Events() {
       this.bindings = {};
+    }
+
+
+    function getTransitionProperty(element) {
+      // Note that in some versions of IE9 it is critical that
+      // msTransform appear in this list before MozTransform
+      var properties = [
+        'transition',
+        'WebkitTransition',
+        'msTransition',
+        'MozTransition',
+        'OTransition'
+      ];
+      var p;
+      while (p = properties.shift()) {
+        if (typeof element.style[p] != 'undefined') {
+          return p;
+        }
+      }
+      return false;
     }
 
     Events.prototype.trigger = function(name, val) {
