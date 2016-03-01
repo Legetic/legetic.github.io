@@ -163,10 +163,15 @@ z-index: 2;
    -ms-transform: translateY(-100%);
    transform: translateY(-100%);
 
-   -webkit-transition: all 1s ease-out;
-     -moz-transition: all 1s ease-out;
-     -o-transition: all 1s ease-out;
-     transition: all 1s ease-out;
+   -webkit-transition: all 2000ms cubic-bezier(.4,.56,.03,.93);
+      -moz-transition: all 2000ms cubic-bezier(.4,.56,.03,.93);
+        -o-transition: all 2000ms cubic-bezier(.4,.56,.03,.93);
+           transition: all 2000ms cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+
+   -webkit-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+      -moz-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+        -o-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+           transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
 
 }
 
@@ -177,9 +182,14 @@ z-index: 2;
    -ms-transform: translateY(100%);
    transform: translateY(100%);
 
-   -webkit-transition: all 1s ease-out;
-     -moz-transition: all 1s ease-out;
-     -o-transition: all 1s ease-out;
-     transition: all 1s ease-out;
+   -webkit-transition: all 2000ms cubic-bezier(.4,.56,.03,.93);
+      -moz-transition: all 2000ms cubic-bezier(.4,.56,.03,.93);
+        -o-transition: all 2000ms cubic-bezier(.4,.56,.03,.93);
+           transition: all 2000ms cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+
+   -webkit-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+      -moz-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+        -o-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+           transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
 
 }

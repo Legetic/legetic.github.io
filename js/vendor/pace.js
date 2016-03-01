@@ -303,9 +303,13 @@
 
 
           setTimeout(function(){
+            var boxPadding = parseInt($("#outer-wrapper").css("padding"));
 
             $("#upper-veil").addClass("extended");
+            $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
+
             $("#lower-veil").addClass("extended");
+            $("#lower-veil").css("transform", "translateY(calc(100% - "  + boxPadding + "px");
 
               $("#procent").remove();
               $("#load-status").remove();
