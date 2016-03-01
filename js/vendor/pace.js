@@ -300,10 +300,10 @@
         $("#procent").text(String(Math.floor(this.progress)) + "%");
         if (this.progress >= 100) {
           progressStr = '99';
-
+          var boxPadding = parseInt($("#outer-wrapper").css("padding"));
 
           setTimeout(function(){
-            var boxPadding = parseInt($("#outer-wrapper").css("padding"));
+
 
             $("#upper-veil").addClass("extended");
             $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");

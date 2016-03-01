@@ -84,7 +84,7 @@ z-index: 2;
 
 #center-box{
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1452716726610-30ed68426a6b?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") black;
+  background: url("https://images.unsplash.com/photo-1434871619871-1f315a50efba?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375") black;
   background-size: cover;
   overflow: hidden;
   z-index: 1;
@@ -93,10 +93,7 @@ z-index: 2;
   margin-left: auto;
   margin-right: auto;
 
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);/* Other transform properties here */
+
 
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -107,10 +104,7 @@ z-index: 2;
 
 #inner-wrapper{
 
-    -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-     -ms-transform: translate3d(0, 0, 0);
-     transform: translate3d(0, 0, 0);
+
 }
 
 #procent{
@@ -163,6 +157,8 @@ z-index: 2;
    -ms-transform: translateY(-100%);
    transform: translateY(-100%);
 
+   will-change: transform;
+
    -webkit-transition: all 1000ms cubic-bezier(.4,.56,.03,.93);
       -moz-transition: all 1000ms cubic-bezier(.4,.56,.03,.93);
         -o-transition: all 1000ms cubic-bezier(.4,.56,.03,.93);
@@ -176,6 +172,7 @@ z-index: 2;
 }
 
 #lower-veil.extended{
+will-change: transform;
 
   -webkit-transform: translateY(100%);
    -moz-transform: translateY(100%);
