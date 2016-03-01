@@ -304,7 +304,6 @@
 
           setTimeout(function(){
 
-
             $("body").addClass("loaded");
             $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
 
