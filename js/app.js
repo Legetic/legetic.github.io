@@ -1,9 +1,7 @@
 
 
 
-$(window).on("load", function() {
-  $('body').addClass('loaded');
-});
+
 
 
 $( document ).ready(function() {
@@ -21,7 +19,14 @@ $( document ).ready(function() {
     mobile = false;
   }
 
-
+/*if(!mobile){
+  $("#box").mousemove(function(event){
+            var relX = event.pageX - $(this).offset().left;
+            var relY = event.pageY - $(this).offset().top;
+            var relBoxCoords = "(" + relX + "," + relY + ")";
+            $(".mouse-cords").text(relBoxCoords);
+        });
+}*/
   if(Modernizr.mq('(max-width: 992px)')){
     $body.addClass('small');
   }else{
