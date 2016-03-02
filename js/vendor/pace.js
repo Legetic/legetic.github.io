@@ -304,12 +304,12 @@
 
           setTimeout(function(){
 
-
-            $("#upper-veil").addClass("extended");
+            $("body").addClass("loaded");
             $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
 
-            $("#lower-veil").addClass("extended");
             $("#lower-veil").css("transform", "translateY(calc(100% - "  + boxPadding + "px");
+
+
 
               $("#procent").remove();
               $("#load-status").remove();
