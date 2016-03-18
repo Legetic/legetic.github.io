@@ -267,20 +267,22 @@ margin-bottom: 10px;
 
 }
 .navButton{
-  margin-right: 2px;
-  margin-left: 2px;
+  /* margin-right: 2px; */
+  /* margin-left: 2px; */
   display: inline-block;
-  /* width: 2px; */
+  width: 10px;
   text-align: center;
 }
 .loaded.small .navButton{
-  margin-right: 10px;
-  margin-left: 10px;
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+  width: 20px;
 }
 
 .loaded.mobile .navButton{
-  margin-right: 10px;
-  margin-left: 10px;
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+  width: 20px;
 }
 .navButton span{
 
