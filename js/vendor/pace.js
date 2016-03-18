@@ -305,6 +305,11 @@
           setTimeout(function(){
 
             $("body").addClass("loaded");
+
+
+            setTimeout(function(){
+  $( "body" ).addClass("intro-done");
+}, 1500);
             $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
 
             $("#lower-veil").css("transform", "translateY(calc(100% - "  + boxPadding + "px");

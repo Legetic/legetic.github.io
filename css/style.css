@@ -161,6 +161,34 @@ padding: 0px;
         transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
 }
 
+.loaded.intro-done.mobile #outer-wrapper{
+
+
+-webkit-transition: all 0.2s cubic-bezier(.4,.56,.03,.93);
+   -moz-transition: all 0.2s cubic-bezier(.4,.56,.03,.93);
+     -o-transition: all 0.2s cubic-bezier(.4,.56,.03,.93);
+        transition: all 0.2s cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+
+-webkit-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+   -moz-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+     -o-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+        transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+}
+
+.loaded.intro-done.mobile #outer-wrapper{
+
+
+-webkit-transition: all 0.2s cubic-bezier(.4,.56,.03,.93);
+   -moz-transition: all 0.2s cubic-bezier(.4,.56,.03,.93);
+     -o-transition: all 0.2s cubic-bezier(.4,.56,.03,.93);
+        transition: all 0.2s cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+
+-webkit-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+   -moz-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+     -o-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+        transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+}
+
 
 #procent{
   text-align: center;
