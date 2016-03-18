@@ -21,9 +21,9 @@ $( document ).ready(function() {
   }
 
 if(mobile){
-  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 300});
+  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 300,contentTouchScroll: 50});
 }else{
-  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 300});
+  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 600});
 }
   /*if(!mobile){
   $("#box").mousemove(function(event){
