@@ -20,9 +20,8 @@ $( document ).ready(function() {
     mobile = false;
   }
 
-if(mobile){
-  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 300,contentTouchScroll: 50});
-}else{
+if(!mobile){
+
   $("#inner-wrapper").mCustomScrollbar({scrollInertia: 600});
 }
   /*if(!mobile){
