@@ -248,6 +248,7 @@ padding: 0px;
 }
 
 #navigationButtons{
+
   font-size: 0;
   z-index: 1;
   width: 100%;
@@ -258,12 +259,13 @@ padding: 0px;
   cursor: pointer;
 }
 .loaded.small #navigationButtons{
+
 margin-bottom: 10px;
 }
 .loaded.mobile #navigationButtons{
 margin-bottom: 10px;
-}
 
+}
 .navButton{
   margin-right: 2px;
   margin-left: 2px;
@@ -295,6 +297,24 @@ display: inline-block;
 
 .loaded.small .navButton span{
   background: white;
+  width: 4px;
+  height: 15px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: black;
+  display: inline-block;
+>>>>>>> origin/master
+}
+.loaded.mobile .navButton span{
+  background: white;
+}
+
+
+.loaded.small .navButton span{
+  background: white;
 }
 .loaded.mobile .navButton span{
   background: white;
@@ -304,6 +324,7 @@ display: inline-block;
 .navButton:hover span{
 
 transform: scale(2);
+
 
 -webkit-transition: all 0.1s ease-out;
 
@@ -318,4 +339,5 @@ transition: all 0.1s ease-out;
 
 .navButton.active span{
   transform: scale(2);
+
 }
