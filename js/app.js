@@ -8,6 +8,7 @@ $( document ).ready(function() {
   var $body = $("body");
 
 
+
   $(function() {
     FastClick.attach(document.body);
   });
@@ -19,6 +20,11 @@ $( document ).ready(function() {
     mobile = false;
   }
 
+if(mobile){
+  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 300});
+}else{
+  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 300});
+}
   /*if(!mobile){
   $("#box").mousemove(function(event){
   var relX = event.pageX - $(this).offset().left;

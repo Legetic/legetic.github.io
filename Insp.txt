@@ -13,6 +13,7 @@ Saker jag ska ha
 http://getbootstrap.com/getting-started/#download
 http://smoothstate.com/
 https://www.getmdl.io/components/index.html#buttons-section
+http://manos.malihu.gr/jquery-custom-content-scroller/
 
 https://images.weserv.nl/
 http://t4t5.github.io/sweetalert/
