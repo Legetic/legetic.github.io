@@ -16,7 +16,7 @@ $( document ).ready(function() {
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     mobile = true;
     $body.addClass('mobile');
-    window.scrollTo(0,1);
+    
   }else{
     mobile = false;
   }
