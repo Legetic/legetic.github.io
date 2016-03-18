@@ -361,6 +361,11 @@ display: inline-block;
 
 .navButton:hover span{
 
+
+-webkit-transform: scale(2);
+-moz-transform: scale(2);
+-ms-transform: scale(2);
+-o-transform: scale(2);
 transform: scale(2);
 
 
@@ -376,6 +381,10 @@ transition: all 0.1s ease-out;
 }
 
 .navButton.active span{
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
   transform: scale(2);
 
 }
