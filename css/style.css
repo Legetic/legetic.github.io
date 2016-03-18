@@ -387,4 +387,14 @@ transition: all 0.1s ease-out;
   -o-transform: scale(2);
   transform: scale(2);
 
+  -webkit-transition: all 0.1s ease-out;
+
+  -moz-transition: all 0.1s ease-out;
+
+  -o-transition: all 0.1s ease-out;
+
+  -ms-transition: all 0.1s ease-out;
+
+  transition: all 0.1s ease-out;
+
 }
