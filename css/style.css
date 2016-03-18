@@ -273,7 +273,15 @@ margin-bottom: 10px;
   /* width: 2px; */
   text-align: center;
 }
+.loaded.small .navButton{
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
+.loaded.mobile .navButton{
+  margin-right: 10px;
+  margin-left: 10px;
+}
 .navButton span{
 
 width: 6px;
