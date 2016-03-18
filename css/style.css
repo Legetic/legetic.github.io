@@ -248,12 +248,21 @@ padding: 0px;
 }
 
 #navigationButtons{
+  z-index: 1;
   width: 100%;
+  margin-bottom: 13px;
   position: absolute;
   bottom: 0;
   text-align: center;
   cursor: pointer;
 }
+.loaded.small #navigationButtons{
+margin-bottom: 5px;
+}
+.loaded.mobile #navigationButtons{
+margin-bottom: 5px;
+}
+
 .navButton{
   display: inline-block;
 
@@ -262,20 +271,28 @@ padding: 0px;
 }
 
 .navButton span{
-  width: 2px;
+  width: 4px;
   height: 15px;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  background: white;
+  background: black;
   display: inline-block;
 }
 
+.loaded.small .navButton span{
+  background: white;
+}
+.loaded.mobile .navButton span{
+  background: white;
+}
+
+
 .navButton:hover span{
 
-transform: scaleY(3);
+transform: scaleY(2);
 
 -webkit-transition: all 0.1s ease-out;
 
@@ -286,11 +303,9 @@ transform: scaleY(3);
 -ms-transition: all 0.1s ease-out;
 
 transition: all 0.1s ease-out;
-
 }
 
 .navButton.active span{
 
-  transform: scaleY(5);
-
+transform: scaleY(3.3);
 }
