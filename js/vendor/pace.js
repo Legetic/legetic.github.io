@@ -305,6 +305,7 @@
           setTimeout(function(){
 
             $("body").addClass("loaded");
+            $("#hero").css("height",$("#scroll-wrapper").height());
 
 
             setTimeout(function(){

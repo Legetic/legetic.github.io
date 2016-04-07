@@ -1,0 +1,2 @@
+för att riktigt åstadkomma en unik hemsida har jag nu märkt att användning av open gl eller liknande
+för total interaktion med besökarna är mycket nödvändigt.

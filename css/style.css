@@ -84,7 +84,7 @@ html{
 
 #center-box{
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1434871619871-1f315a50efba?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375") black;
+  background: url("https://images.unsplash.com/photo-1434871619871-1f315a50efba?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375") black;
   background-size: cover;
   overflow: auto;
   z-index: 1;
@@ -100,7 +100,7 @@ html{
   transition: all 0.4s;
 }
 
-#inner-wrapper{
+#scroll-wrapper{
   display: block;
   position:
   relative;height: 100%;
@@ -117,7 +117,7 @@ html{
 border: 5px solid transparent;
 
 }
-.loaded #inner-wrapper{
+.loaded #scroll-wrapper{
 
 
   -webkit-transition: all 1000ms 1s cubic-bezier(.4,.56,.03,.93);
@@ -131,6 +131,26 @@ border: 5px solid transparent;
           transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
 
           border: 5px solid white;
+}
+
+#inner-wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+/*CONTENT*/
+#hero{height: 500px;width: 100%;position: relative;}
+
+.hero-button{
+  width: 100px;
+  height: 50px;
+  display: block;
+  /* margin: 0 auto; */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #37FDFC;
 }
 
 .loaded.mobile #outer-wrapper{
@@ -279,8 +299,8 @@ padding: 0px;
 
   font-size: 0;
   z-index: 1;
-  width: 100%;
-  margin-bottom: 13px;
+  right: 50px;
+  margin-bottom: 15px;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -314,9 +334,8 @@ margin-bottom: 10px;
 }
 .navButton span{
 
-width: 6px;
-
-height: 15px;
+  width: 2px;
+      height: 10px;
 
 -webkit-transition: all 0.4s ease-out;
 
@@ -346,17 +365,7 @@ display: inline-block;
   background: white;
 }
 
-
-.loaded.small .navButton span{
-  background: white;
-}
-.loaded.mobile .navButton span{
-  background: white;
-}
-
-
 .navButton:hover span{
-
 
 -webkit-transform: scale(2);
 -moz-transform: scale(2);
@@ -376,12 +385,13 @@ transform: scale(2);
 transition: all 0.1s ease-out;
 }
 
-.navButton.active span{
+:not(.mobile) .navButton.active span{
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -o-transform: scale(2);
   transform: scale(2);
+  background: #37FDFC;
 
   -webkit-transition: all 0.1s ease-out;
 

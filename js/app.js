@@ -6,7 +6,8 @@
 
 $( document ).ready(function() {
   var $body = $("body");
-
+  var $hero = $("#hero");
+  var $scrollWrapper = $("#scroll-wrapper");
 
 
   $(function() {
@@ -16,15 +17,24 @@ $( document ).ready(function() {
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     mobile = true;
     $body.addClass('mobile');
-    
+
   }else{
     mobile = false;
   }
 
 if(!mobile){
 
-  $("#inner-wrapper").mCustomScrollbar({scrollInertia: 600});
+  $scrollWrapper.mCustomScrollbar({
+
+    scrollInertia: 200,
+    mouseWheel:{ scrollAmount: 150 }
+
+  });
 }
+
+
+
+
   /*if(!mobile){
   $("#box").mousemove(function(event){
   var relX = event.pageX - $(this).offset().left;
@@ -45,6 +55,9 @@ $(window).resize(function() {
   }else{
     $body.removeClass('small');
   }
+
+  $hero.css("height",$scrollWrapper.height());
+  console.log($scrollWrapper.height());
 });
 
 
@@ -65,6 +78,22 @@ $( "#center-box" ).on( "click", function() {
 console.log( "rip" );
 });
 */
+
+(function($){
+  $.fn.disableSelection = function(){
+    return this.bind( ( $.support.selectstart ? "selectstart" : "mousedown" ) +
+      ".disableSelection", function( event ) {
+      event.preventDefault();
+      });
+  };
+
+  $.fn.enableSelection = function(){
+    return this.unbind('.disableSelection');
+  };
+})(jQuery);
+
+
+$('.notSelectable').disableSelection();
 
 
 });
