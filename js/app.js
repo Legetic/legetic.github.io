@@ -32,8 +32,10 @@ if(!mobile){
   });
 }
 
-
-
+/*
+$(function(){
+      $(".player").YTPlayer();
+    });*/
 
   /*if(!mobile){
   $("#box").mousemove(function(event){
