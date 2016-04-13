@@ -37,6 +37,11 @@ CONTENTS:
 	}
 
 	.mCSB_container{ /* contains the original content */
+		-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+
 		overflow: hidden;
 		width: auto;
 		height: auto;

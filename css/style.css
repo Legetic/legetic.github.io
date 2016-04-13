@@ -93,7 +93,7 @@ html{
 
 #center-box{
   height: 100%;
-  background: url("https://images.weserv.nl/?url=images.unsplash.com/photo-1453489629239-2d15752eb271") black;
+  background: url("https://images.weserv.nl/?url=images.unsplash.com/photo-1453489629239-2d15752eb271") #89A8AE;
   background-size: cover;
   overflow: auto;
   z-index: 1;
@@ -110,10 +110,10 @@ html{
 }
 
 #scroll-wrapper{
-  display: block;
+  display: none;
   position:
   relative;height: 100%;
-  display: block;
+
   position:absolute;
   height:auto;
   bottom:0;
@@ -182,7 +182,7 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
       font-size: 25px;
 }
 .small .hero-button{
-  top:90%;
+  top:95%;
   -webkit-transform: translate(-50%,-100%);
 -moz-transform: translate(-50%,-100%);
 -ms-transform: translate(-50%,-100%);
@@ -207,6 +207,7 @@ opacity: 0;
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+
   -webkit-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
   -moz-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
   -o-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
@@ -390,6 +391,8 @@ padding: 0px;
 }
 
 #contact{
+      z-index: 1;
+  display: block;
   cursor:pointer;
   right: 35px;
 margin-top: 25px;
@@ -397,6 +400,20 @@ position: absolute;
 top: 0;
 color: white;
 font-size:30px;
+
+
+-webkit-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
+-moz-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
+-o-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
+transition: all 0.5s cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+-webkit-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+-moz-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+-o-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
+transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+}
+
+#contact:hover{
+color:#FF4B46;
 }
 
 #navigationButtons{
@@ -471,8 +488,8 @@ transform: scale(2);
 
 transition: all 0.1s ease-out;
 }
-
-:not(.mobile) .navButton.active span{
+/*:not(.mobile)*/
+.navButton.active span{
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
   -ms-transform: scale(2);

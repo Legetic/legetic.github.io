@@ -297,8 +297,10 @@
         //hej här la jag till
         $("#center-box").css("width",this.progress + "%");
 
+
         $("#procent").text(String(Math.floor(this.progress)) + "%");
         if (this.progress >= 100) {
+          $("#scroll-wrapper").show();
           progressStr = '99';
           var boxPadding = parseInt($("#outer-wrapper").css("padding"));
 
