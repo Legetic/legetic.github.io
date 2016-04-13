@@ -32,7 +32,11 @@ if(!mobile){
   });
 }
 
+jQuery( window ).on( "orientationchange", function( event ) {
 
+    $hero.css("height",$scrollWrapper.height());
+
+} );
 
 
 if(Modernizr.mq('(max-width: 992px)')){
@@ -49,6 +53,10 @@ $(window).resize(function() {
   }
 
   $hero.css("height",$scrollWrapper.height());
+
+
+
+
 
 });
 

@@ -177,9 +177,11 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  cursor: default;
 }
 .mobile #hero-title h1{
       font-size: 25px;
+
 }
 .small .hero-button{
   top:95%;
