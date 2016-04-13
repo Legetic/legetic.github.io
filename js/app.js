@@ -32,6 +32,28 @@ if(!mobile){
   });
 }
 
+jQuery( window ).on( "orientationchange", function( event ) {
+  console.log("change");
+  if(window.orientation == 0) // Portrait
+  {
+    $hero.css("height",$scrollWrapper.height());
+  }
+  else // Landscape
+  {
+    $hero.css("height",$scrollWrapper.width());
+  }
+
+
+} );
+/*
+if(mobile){
+  $hero.css("height",$scrollWrapper.height());
+
+}else{
+  $hero.css("height",$scrollWrapper.height());
+  //fixa detta för mobil...
+
+}*/
 /*
 $(function(){
       $(".player").YTPlayer();
@@ -59,7 +81,11 @@ $(window).resize(function() {
   }
 
   $hero.css("height",$scrollWrapper.height());
-  console.log($scrollWrapper.height());
+
+
+
+
+
 });
 
 

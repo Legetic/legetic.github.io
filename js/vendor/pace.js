@@ -305,11 +305,12 @@
           setTimeout(function(){
 
             $("body").addClass("loaded");
-            $("#hero").css("height",$("#scroll-wrapper").height());
+$("#hero").css("height",$("#scroll-wrapper").height());
 
 
             setTimeout(function(){
   $( "body" ).addClass("intro-done");
+  $("#hero").css("height",$("#scroll-wrapper").height());
 }, 1500);
             $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
 
@@ -323,6 +324,9 @@
                 $("#upper-veil").remove();
                 $("#lower-veil").remove();
               }, 1000);
+
+
+
 
 
           }, 500);

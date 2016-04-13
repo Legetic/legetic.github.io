@@ -11,6 +11,9 @@ http://ds4windows.com/
 
 Saker jag ska ha
 
+text uppe i högra hörnet.
+Ett rött vertikalt sträck till vänster eller höger. Typ som det elastiska bandet som håller ihop en anteckningsbok
+
 http://jquery-jkit.com/commands/parallax.html
 
 http://getbootstrap.com/getting-started/#download
