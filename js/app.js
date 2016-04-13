@@ -32,41 +32,9 @@ if(!mobile){
   });
 }
 
-jQuery( window ).on( "orientationchange", function( event ) {
-  console.log("change");
-  if(window.orientation == 0) // Portrait
-  {
-    $hero.css("height",$scrollWrapper.height());
-  }
-  else // Landscape
-  {
-    $hero.css("height",$scrollWrapper.width());
-  }
 
 
-} );
-/*
-if(mobile){
-  $hero.css("height",$scrollWrapper.height());
 
-}else{
-  $hero.css("height",$scrollWrapper.height());
-  //fixa detta för mobil...
-
-}*/
-/*
-$(function(){
-      $(".player").YTPlayer();
-    });*/
-
-  /*if(!mobile){
-  $("#box").mousemove(function(event){
-  var relX = event.pageX - $(this).offset().left;
-  var relY = event.pageY - $(this).offset().top;
-  var relBoxCoords = "(" + relX + "," + relY + ")";
-  $(".mouse-cords").text(relBoxCoords);
-});
-}*/
 if(Modernizr.mq('(max-width: 992px)')){
   $body.addClass('small');
 }else{
@@ -95,6 +63,7 @@ $(window).resize(function() {
   $(this).addClass('active');
 
   });
+
 /*
 swal({   title: "Error!",
 text: "Here's my error message!",
