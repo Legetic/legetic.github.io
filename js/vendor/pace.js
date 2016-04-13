@@ -1,9 +1,9 @@
 (function() {
   var AjaxMonitor, Bar, DocumentMonitor, ElementMonitor, ElementTracker, EventLagMonitor, Evented, Events, NoTargetError, Pace, RequestIntercept, SOURCE_KEYS, Scaler, SocketRequestTracker, XHRRequestTracker, animation, avgAmplitude, bar, cancelAnimation, cancelAnimationFrame, defaultOptions, extend, extendNative, getFromDOM, getIntercept, handlePushState, ignoreStack, init, now, options, requestAnimationFrame, result, runAnimation, scalers, shouldIgnoreURL, shouldTrack, source, sources, uniScaler, _WebSocket, _XDomainRequest, _XMLHttpRequest, _i, _intercept, _len, _pushState, _ref, _ref1, _replaceState,
-    __slice = [].slice,
-    __hasProp = {}.hasOwnProperty,
-    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+  __slice = [].slice,
+  __hasProp = {}.hasOwnProperty,
+  __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+  __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   defaultOptions = {
     catchupTime: 100,
@@ -294,7 +294,7 @@
       }
       if (!this.lastRenderedProgress || this.lastRenderedProgress | 0 !== this.progress | 0) {
         el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
-//hej här la jag till
+        //hej här la jag till
         $("#center-box").css("width",this.progress + "%");
 
         $("#procent").text(String(Math.floor(this.progress)) + "%");
@@ -305,29 +305,25 @@
           setTimeout(function(){
 
             $("body").addClass("loaded");
-$("#hero").css("height",$("#scroll-wrapper").height());
+            $("#hero").css("height",$("#scroll-wrapper").height());
 
 
             setTimeout(function(){
-  $( "body" ).addClass("intro-done");
-  $("#hero").css("height",$("#scroll-wrapper").height());
-}, 1500);
+              $( "body" ).addClass("intro-done");
+              $("#hero").css("height",$("#scroll-wrapper").height());
+            }, 1500);
             $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
 
             $("#lower-veil").css("transform", "translateY(calc(100% - "  + boxPadding + "px");
 
 
 
-              $("#procent").remove();
-              $("#load-status").remove();
-              setTimeout(function() {
-                $("#upper-veil").remove();
-                $("#lower-veil").remove();
-              }, 1000);
-
-
-
-
+            $("#procent").remove();
+            $("#load-status").remove();
+            setTimeout(function() {
+              $("#upper-veil").remove();
+              $("#lower-veil").remove();
+            }, 1000);
 
           }, 500);
 
@@ -475,7 +471,7 @@ $("#hero").css("height",$("#scroll-wrapper").height());
 
     function RequestIntercept() {
       var monitorXHR,
-        _this = this;
+      _this = this;
       RequestIntercept.__super__.constructor.apply(this, arguments);
       monitorXHR = function(req) {
         var _open;
@@ -634,7 +630,7 @@ $("#hero").css("height",$("#scroll-wrapper").height());
   XHRRequestTracker = (function() {
     function XHRRequestTracker(request) {
       var event, size, _j, _len1, _onreadystatechange, _ref2,
-        _this = this;
+      _this = this;
       this.progress = 0;
       if (window.ProgressEvent != null) {
         size = null;
@@ -673,7 +669,7 @@ $("#hero").css("height",$("#scroll-wrapper").height());
   SocketRequestTracker = (function() {
     function SocketRequestTracker(request) {
       var event, _j, _len1, _ref2,
-        _this = this;
+      _this = this;
       this.progress = 0;
       _ref2 = ['error', 'open'];
       for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
@@ -744,7 +740,7 @@ $("#hero").css("height",$("#scroll-wrapper").height());
 
     function DocumentMonitor() {
       var _onreadystatechange, _ref2,
-        _this = this;
+      _this = this;
       this.progress = (_ref2 = this.states[document.readyState]) != null ? _ref2 : 100;
       _onreadystatechange = document.onreadystatechange;
       document.onreadystatechange = function() {
@@ -762,7 +758,7 @@ $("#hero").css("height",$("#scroll-wrapper").height());
   EventLagMonitor = (function() {
     function EventLagMonitor() {
       var avg, interval, last, points, samples,
-        _this = this;
+      _this = this;
       this.progress = 0;
       avg = 0;
       samples = [];

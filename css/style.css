@@ -389,6 +389,16 @@ padding: 0px;
 
 }
 
+#contact{
+  cursor:pointer;
+  right: 35px;
+margin-top: 25px;
+position: absolute;
+top: 0;
+color: white;
+font-size:30px;
+}
+
 #navigationButtons{
 
 font-size: 0;
@@ -407,11 +417,9 @@ text-align: center;
 
 cursor: pointer;
 }
-.loaded.small #navigationButtons{/* width: 100%; *//* margin-bottom: 10px; *//* right: 0; */display: none;}
+
 .loaded.mobile #navigationButtons{
-  width: 100%;
-  margin-bottom: 0;
-  right: 0;
+display: none;
 }
 .navButton{
   /* margin-right: 2px; */
@@ -420,19 +428,7 @@ cursor: pointer;
   width: 10px;
   text-align: center;
 }
-.loaded.small .navButton{
-  margin-right: 15px;
-  margin-left: 15px;
-  width: 20px;
 
-}
-
-.loaded.mobile .navButton{
-   margin-right: 15px;
-  margin-left: 15px;
-  width: 20px;
-
-}
 .navButton span{
 
 width: 4px;
@@ -454,19 +450,7 @@ background: white;
 display: inline-block;
 }
 
-.loaded.small .navButton span{
-  background: white;
-  width: 30px;
-  height: 30px;
 
-  background: black;
-  display: inline-block;
-
-border-radius: 20%;
-}
-.loaded.mobile .navButton span{
-  background: white;
-}
 
 .navButton:hover span{
 

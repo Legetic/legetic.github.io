@@ -50,10 +50,6 @@ $(window).resize(function() {
 
   $hero.css("height",$scrollWrapper.height());
 
-
-
-
-
 });
 
 
