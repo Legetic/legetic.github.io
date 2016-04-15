@@ -395,27 +395,85 @@ padding: 0px;
 #contact{
       z-index: 1;
   display: block;
-  cursor:pointer;
+
   right: 35px;
 margin-top: 25px;
 position: absolute;
 top: 0;
 color: white;
 font-size:30px;
+width: 40px;
+height:40px;
+
+line-height: 40px;
+text-align: center;
 
 
--webkit-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
--moz-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
--o-transition: all 0.5s cubic-bezier(.4,.56,.03,.93);
-transition: all 0.5s cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+transform: translateZ(0);
+
+
+
+-webkit-transition: width 0.5s cubic-bezier(.4,.56,.03,.93), height 0.5s 0.5s cubic-bezier(.4,.56,.03,.93),background-color 0.7s 0.5s cubic-bezier(.4,.56,.03,.93);
+-moz-transition: width 0.5s cubic-bezier(.4,.56,.03,.93), height 0.5s 0.5s cubic-bezier(.4,.56,.03,.93),background-color 0.7s 0.5s cubic-bezier(.4,.56,.03,.93);
+-o-transition: width 0.5s cubic-bezier(.4,.56,.03,.93), height 0.5s 0.5s cubic-bezier(.4,.56,.03,.93),background-color 0.7s 0.5s cubic-bezier(.4,.56,.03,.93);
+transition: width 0.5s cubic-bezier(.4,.56,.03,.93), height 0.5s 0.5s cubic-bezier(.4,.56,.03,.93),background-color 0.7s 0.5s cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
 -webkit-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
 -moz-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
 -o-transition-timing-function: cubic-bezier(.4,.56,.03,.93);
 transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
+
+  border-radius: 3px;
+}
+#contact-button{
+    cursor:pointer;
+}
+#contact-button.hover{
+  will-change: transform;
+}
+#contact-button span{
+  height: 1px;
+  width: 100%;
+  background: red;
 }
 
 #contact:hover{
 color:#FF4B46;
+
+}
+
+#contact.extended{
+
+    height: calc(100% - 50px);
+
+  color:#FF4B46;
+}
+
+
+@media only screen and (min-width: 1050px) {
+
+  #contact.extended{
+  background-color: white;
+  width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1049px) {
+
+  #contact.extended{
+  background-color: white;
+  width: 250px;
+  }
+}
+
+@media only screen and (max-width: 862px) {
+
+  #contact.extended{
+  background-color: white;
+  width: calc(100% - 70px);
+  }
 }
 
 #navigationButtons{

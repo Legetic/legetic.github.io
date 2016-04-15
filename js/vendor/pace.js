@@ -299,6 +299,7 @@
 
 
         $("#procent").text(String(Math.floor(this.progress)) + "%");
+
         if (this.progress >= 100) {
           $("#scroll-wrapper").show();
           progressStr = '99';

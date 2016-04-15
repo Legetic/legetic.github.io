@@ -68,6 +68,17 @@ $(window).resize(function() {
 
   });
 
+
+
+    $("#contact-button").on("click", function(){
+    /*  e.preventDefault(); KAN BEHÖVAS OM JAG BYTER TILL EN a*/
+      $( "#contact" ).toggleClass( "extended" )
+      $("#contact-button").toggleClass("fa-share");
+      $("#contact-button").toggleClass("fa-times");
+
+    });
+
+
 /*
 swal({   title: "Error!",
 text: "Here's my error message!",
