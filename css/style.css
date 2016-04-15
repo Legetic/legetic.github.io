@@ -80,6 +80,8 @@ html{
   background: white;
   z-index: 2;
 
+  margin-left: -10px;
+
 }
 #lower-veil{
   position: absolute;
@@ -89,6 +91,7 @@ html{
   background: white;
   z-index: 2;
 
+  margin-left: -10px;
 }
 
 #center-box{
