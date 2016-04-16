@@ -145,6 +145,11 @@ border: 5px solid transparent;
           border: 5px solid white;
 }
 
+.mobile.loaded #scroll-wrapper{
+  margin-top: 0;
+margin-bottom: 0;/*TA BORT*/
+}
+
 #inner-wrapper{
   width: 100%;
   height: 100%;
@@ -455,23 +460,37 @@ color:#FF4B46;
 }
 
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1540px) {
 
   #contact.extended{
   background-color: white;
-  width: 300px;
+  width: 500px;
   }
 }
-
-@media only screen and (max-width: 1049px) {
+@media only screen and (max-width: 1539px) {
 
   #contact.extended{
   background-color: white;
-  width: 250px;
+  width: 500px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+
+  #contact.extended{
+  background-color: white;
+  width: 350px;
   }
 }
 
-@media only screen and (max-width: 862px) {
+@media only screen and (max-width: 1200px) {
+
+  #contact.extended{
+  background-color: white;
+  width: 275px;
+  }
+}
+
+@media only screen and (max-width: 962px) {
 
   #contact.extended{
   background-color: white;
