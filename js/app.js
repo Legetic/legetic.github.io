@@ -78,7 +78,7 @@ $(window).resize(function() {
 
 setTimeout(function(){
       $("#contact-form").toggleClass("extended");
-}, 100);
+}, 200);
 
     });
 
