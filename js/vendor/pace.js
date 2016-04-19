@@ -33,6 +33,7 @@
   };
 
 
+
   now = function() {
     var _ref;
     return (_ref = typeof performance !== "undefined" && performance !== null ? typeof performance.now === "function" ? performance.now() : void 0 : void 0) != null ? _ref : +(new Date);
@@ -282,6 +283,13 @@
 
     Bar.prototype.render = function() {
       var el, key, progressStr, transform, _j, _len1, _ref2;
+      $body = $("body");
+      $hero = $("#hero");
+      $scrollwrapper = $("#scroll-wrapper");
+      $centerbox = $("#center-box");
+
+      $lowerveil = $("#lower-veil");
+      $upperveil = $("#upper-veil");
       if (document.querySelector(options.target) == null) {
         return false;
       }
@@ -295,37 +303,37 @@
       if (!this.lastRenderedProgress || this.lastRenderedProgress | 0 !== this.progress | 0) {
         el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
         //hej här la jag till
-        $("#center-box").css("width",this.progress + "%");
+        $centerbox.css("width",this.progress + "%");
 
 
         $("#procent").text(String(Math.floor(this.progress)) + "%");
 
         if (this.progress >= 100) {
-          $("#scroll-wrapper").show();
+          $scrollwrapper.show();
           progressStr = '99';
           var boxPadding = parseInt($("#outer-wrapper").css("padding"));
 
           setTimeout(function(){
 
-            $("body").addClass("loaded");
-            $("#hero").css("height",$("#scroll-wrapper").height());
+            $body.addClass("loaded");
+            $hero.css("height",$scrollwrapper.height());
 
 
             setTimeout(function(){
-              $( "body" ).addClass("intro-done");
-              $("#hero").css("height",$("#scroll-wrapper").height());
+              $body.addClass("intro-done");
+              $hero.css("height",$("#scroll-wrapper").height());
             }, 1500);
-            $("#upper-veil").css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
+            $upperveil.css("transform", "translateY(calc(-100% + "  + boxPadding + "px");
 
-            $("#lower-veil").css("transform", "translateY(calc(100% - "  + boxPadding + "px");
+            $lowerveil.css("transform", "translateY(calc(100% - "  + boxPadding + "px");
 
 
 
             $("#procent").remove();
             $("#load-status").remove();
             setTimeout(function() {
-              $("#upper-veil").remove();
-              $("#lower-veil").remove();
+              $upperveil.remove();
+              $lowerveil.remove();
             }, 1000);
 
           }, 500);

@@ -95,10 +95,11 @@ html{
 }
 
 #center-box{
+
+  overflow: hidden;
   height: 100%;
   background: url("https://images.weserv.nl/?url=images.unsplash.com/photo-1453489629239-2d15752eb271") #89A8AE;
   background-size: cover;
-  overflow: auto;
   z-index: 1;
   position: relative;
   text-align: center;
@@ -110,6 +111,7 @@ html{
   -o-transition: all 0.4s;
   -ms-transition: all 0.4s;
   transition: all 0.4s;
+
 }
 
 #scroll-wrapper{
@@ -408,8 +410,6 @@ padding: 0px;
 margin-top: 25px;
 position: absolute;
 top: 0;
-color: white;
-font-size:30px;
 width: 40px;
 height:40px;
 
@@ -436,10 +436,13 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
   border-radius: 3px;
 }
 #contact-button{
+  color: white;
+  font-size:30px;
     cursor:pointer;
 }
-#contact-button.hover{
+#contact-button:hover{
   will-change: transform;
+  color:#FF4B46;
 }
 #contact-button span{
   height: 1px;
@@ -447,55 +450,104 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
   background: red;
 }
 
-#contact:hover{
-color:#FF4B46;
-
-}
-
 #contact.extended{
 
+background-color: white;
     height: calc(100% - 50px);
+}
+#contact.extended #contact-button{
 
   color:#FF4B46;
 }
+#contact-form{
 
+  margin-left: 120px;
+    margin-right: 120px;
+    opacity: 0;
+
+
+}
+#contact-form.extended{
+display: block;
+opacity: 1;
+
+-webkit-transition: all 0.6s 0.4s;
+-moz-transition: all 0.6s 0.4s;
+-o-transition: all 0.6s 0.4s;
+-ms-transition: all 0.6s 0.4s;
+transition: all 0.6s 0.4s;
+
+}
+
+.input{
+
+position: relative;
+
+  border: none;
+   font-size: 13px;
+   color: rgba(0,0,0,0.6);
+   padding-left: 10px;
+   background: #fafafa;
+   border-radius: 2px;
+   margin-top: 1px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px;
+   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+   border: 1px solid #eee;
+   box-shadow: none;
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   -o-transition: all 0.4s;
+   -ms-transition: all 0.4s;
+   transition: all 0.4s;
+display: block;
+       width: calc(100% - 26px);
+   height: 34px;
+   padding: 6px 12px;
+}
 
 @media only screen and (min-width: 1540px) {
 
   #contact.extended{
-  background-color: white;
+
   width: 500px;
   }
 }
 @media only screen and (max-width: 1539px) {
 
   #contact.extended{
-  background-color: white;
+
   width: 500px;
   }
 }
 @media only screen and (max-width: 1400px) {
 
   #contact.extended{
-  background-color: white;
+
   width: 350px;
   }
+
+  #contact-form{
+
+    margin-left: 60px;
+      margin-right: 60px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
 
   #contact.extended{
-  background-color: white;
-  width: 275px;
+
+  width: calc(100% - 70px);
   }
 }
 
 @media only screen and (max-width: 962px) {
 
-  #contact.extended{
-  background-color: white;
-  width: calc(100% - 70px);
-  }
+
 }
 
 #navigationButtons{
