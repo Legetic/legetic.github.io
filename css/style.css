@@ -513,6 +513,14 @@ display: block;
    padding: 6px 12px;
 }
 
+#message{
+  min-height:130px;
+  line-height:normal;
+}
+.mobile #message{
+  min-height:70px;
+}
+
 @media only screen and (min-width: 1540px) {
 
   #contact.extended{
