@@ -413,7 +413,7 @@ top: 0;
 width: 40px;
 height:40px;
 
-overflow-x: hidden;
+
 
 line-height: 40px;
 text-align: center;
@@ -456,6 +456,7 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
 
 background-color: white;
     height: calc(100% - 50px);
+    overflow-x: hidden;
 }
 #contact.extended #contact-button{
 
