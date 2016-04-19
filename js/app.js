@@ -83,6 +83,14 @@ setTimeout(function(){
     });
 
 
+    $('#contact-form').submit(function() {
+           // DO STUFF
+           if($('#name').val().length == 0){
+             $('#name').val($('#name').attr('placeholder'));
+           }
+           return true; // return false to cancel form action
+       });
+
 /*
 swal({   title: "Error!",
 text: "Here's my error message!",
