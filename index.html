@@ -68,16 +68,18 @@
 
         <form action="https://formspree.io/artofsurvivalrpg@gmail.com"  method="POST" id="contact-form" class="">
 
-          <label for="_replyto">Email:</label>
-          <input type="email" name="_replyto" placeholder="email@example.com" id="_replyto" class="input" required>
+          <!--
+          <input type="email" name="_replyto"  required>
+          <label for="_subject">Subject:</label>
+          <input type="text" name="_subject" placeholder="New submission!" id="_subject" class="input"/>
 
-          <input type="hidden" name="_subject" placeholder="New submission!" id="_subject"/>
-          <label for="name">Name:</label>
-          <input type="text" name="name" placeholder="John Doe" id="name" class="input" maxlength="30">
-          <input type="submit" value="Send" id="Send">
-          <input type="text" name="_gotcha" style="display:none" />
-
-
+<input type="text" name="_gotcha" style="display:none" />
+          -->
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="John Doe" id="name" class="input">
+    <label for="_replyto">Email:</label>
+    <input type="email" name="_replyto" placeholder="email@example.com" id="_replyto" class="input">
+    <input type="submit" value="Send">
 
         </form>
 
