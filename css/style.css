@@ -249,7 +249,7 @@ opacity: 0;
 
   color:white;
 }
-.hero-button:hover{
+:not(.mobile) .hero-button:hover{
   background: white;
   color:#3A6D76;
   width: 170px;
