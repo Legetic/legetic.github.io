@@ -484,6 +484,15 @@ opacity: 1;
 transition: all 0.6s 0.4s;
 
 }
+#contact-form h5{
+
+
+    font-size: 11px;
+    letter-spacing: 5px;
+
+    color: black;
+    margin: 0;
+}
 
 .input{
 
@@ -580,7 +589,7 @@ display: block;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
 
   #contact.extended{
 
