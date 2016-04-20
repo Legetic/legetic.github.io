@@ -8,6 +8,9 @@ $( document ).ready(function() {
   var $body = $("body");
   var $hero = $("#hero");
   var $scrollWrapper = $("#scroll-wrapper");
+  var $contactForm = $("#contact-form");
+  var $contactButton = $("#contact-button");
+  var $contact =   $( "#contact" );
 
 
   $(function() {
@@ -70,15 +73,23 @@ $(window).resize(function() {
 
 
 
-    $("#contact-button").on("click", function(){
+    $contactButton.on("click", function(){
     /*  e.preventDefault(); KAN BEHÖVAS OM JAG BYTER TILL EN a*/
-      $( "#contact" ).toggleClass( "extended" );
-      $("#contact-button").toggleClass("fa-envelope");
-      $("#contact-button").toggleClass("fa-times");
+      $contact.toggleClass( "extended" );
+      $contactButton.toggleClass("fa-envelope");
+      $contactButton.toggleClass("fa-times");
 
 setTimeout(function(){
-      $("#contact-form").toggleClass("extended");
+      $contactForm.toggleClass("extending");
 }, 200);
+
+if($contactForm.hasClass("extended")){
+  $contactForm.removeClass("extended");
+}else{
+setTimeout(function(){
+      $contactForm.addClass("extended");
+}, 1000);
+}
 
     });
 
