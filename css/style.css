@@ -622,6 +622,16 @@ display: block;
       margin-right: 20px;
     }
 }
+#item1{
+  margin-top: 80px;
+}
+.info{
+      display: inline-block;
+}
+#video{
+  float: right;
+display: inline-block;
+}
 
 #navigationButtons{
 

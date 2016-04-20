@@ -37,7 +37,8 @@ if(!mobile){
 
 jQuery( window ).on( "orientationchange", function( event ) {
 
-    $hero.css("height",$scrollWrapper.height());
+      $hero.css("height",parseInt($scrollWrapper.height()) + 15 + "px");
+
 
 } );
 
@@ -55,7 +56,8 @@ $(window).resize(function() {
     $body.removeClass('small');
   }
 
-  $hero.css("height",$scrollWrapper.height());
+  $hero.css("height",parseInt($scrollWrapper.height()) + 15 + "px");
+
 
 
 

@@ -316,7 +316,8 @@
           setTimeout(function(){
 
             $body.addClass("loaded");
-            $hero.css("height",$scrollwrapper.height());
+          //  $hero.css("height",$scrollwrapper.height());
+            $hero.css("height",parseInt($scrollwrapper.height()) + 15 + "px");
 
 
             setTimeout(function(){
