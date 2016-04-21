@@ -628,10 +628,13 @@ display: block;
 .info{
       display: inline-block;
 }
-#video{
-  float: right;
-display: inline-block;
+#ytPlayer{
+  height: 100px;
+  width: 100px;
+
+
 }
+
 
 #navigationButtons{
 
