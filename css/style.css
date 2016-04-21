@@ -579,7 +579,8 @@ display: block;
 }
 #textarea_feedback{
   position: relative;
-
+  text-align: left;
+  line-height: 30px;
     border: none;
      font-size: 13px;
      color: rgba(0,0,0,0.6);
