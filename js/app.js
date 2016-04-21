@@ -11,15 +11,19 @@ $( document ).ready(function() {
   var $contactForm = $("#contact-form");
   var $contactButton = $("#contact-button");
   var $contact =   $( "#contact" );
+  var $message = $("#message");
+  var $textareFeedback = $('#textarea_feedback');
+  var $navButton = $(".navButton");
 
 
-  $(document).ready(function () {
+
   $.cookieCuttr({
   cookieAnalytics: false,
   cookieMessage: 'We use cookies on this website, you can <a href="{{cookiePolicyLink}}" title="read about our cookies">read about them here</a>. To use the website as intended please...',
   cookiePolicyLink: 'http://cookiecuttr.com/'
   });
-  });
+
+
 
   $(function(){
         $(".player").YTPlayer();
@@ -78,9 +82,9 @@ $(window).resize(function() {
 });
 
 
-  $(".navButton").on("click", function(){
+  $navButton.on("click", function(){
   /*  e.preventDefault(); KAN BEHÖVAS OM JAG BYTER TILL EN a*/
-  $(".navButton").removeClass('active'); // remove first
+  $navButton.removeClass('active'); // remove first
   $(this).addClass('active');
 
   });
@@ -108,6 +112,15 @@ setTimeout(function(){
     });
 
 
+    var text_max = parseInt($message.attr("maxlength"));
+        $textareFeedback.html(text_max + ' characters remaining');
+
+        $message.keyup(function() {
+            var text_length = $message.val().length;
+            var text_remaining = text_max - text_length;
+
+            $textareFeedback.html(text_remaining + ' characters remaining');
+        });
 
 
 /*
