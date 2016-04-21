@@ -113,7 +113,7 @@ setTimeout(function(){
 
 
     var text_max = parseInt($message.attr("maxlength"));
-        $textareFeedback.html(text_max + ' characters remaining');
+        $textareFeedback.html(text_max);
 
         $message.keyup(function() {
             var text_length = $message.val().length;
