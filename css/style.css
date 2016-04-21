@@ -628,12 +628,7 @@ display: block;
 .info{
       display: inline-block;
 }
-#video{
-  height: 100px;
-  width: 100px;
-
-
-}
+#P1{height: 340px;width: 600px;float: right;margin-right: 100px;/* position: absolute; */display: inline-block;}
 
 
 #navigationButtons{

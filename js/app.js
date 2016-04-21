@@ -68,7 +68,7 @@ $(window).resize(function() {
     $body.removeClass('small');
   }
 
-  $hero.css("height",parseInt($scrollWrapper.height()) + 15 + "px");
+  //$hero.css("height",parseInt($scrollWrapper.height()) + 15 + "px");
 
 
 
