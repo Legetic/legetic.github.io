@@ -583,9 +583,12 @@ display: block;
   line-height: 30px;
     border: none;
      font-size: 13px;
-     color: rgba(0,0,0,0.6);
+     color: rgba(0,0,0,0.3);
      padding-left: 10px;
+}
 
+.ast{
+  color:#FF4B46;
 }
 
 @media only screen and (min-width: 1540px) {
