@@ -119,7 +119,7 @@ setTimeout(function(){
             var text_length = $message.val().length;
             var text_remaining = text_max - text_length;
 
-            $textareFeedback.html(text_remaining + ' characters remaining');
+            $textareFeedback.html(text_remaining);
         });
 
 
