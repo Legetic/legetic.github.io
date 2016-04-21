@@ -24,10 +24,10 @@ $( document ).ready(function() {
   });
 
 
-
+/*
   $(function(){
         $(".player").YTPlayer();
-      });
+      });*/
 
   $(function() {
     FastClick.attach(document.body);
