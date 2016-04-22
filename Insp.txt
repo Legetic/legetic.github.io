@@ -11,6 +11,9 @@ http://ds4windows.com/
 
 Saker jag ska ha
 
+
+http://stackoverflow.com/questions/19816451/how-to-float-text-next-to-iframe
+
 text uppe i högra hörnet.
 Ett rött vertikalt sträck till vänster eller höger. Typ som det elastiska bandet som håller ihop en anteckningsbok
 

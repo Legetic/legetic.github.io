@@ -17,6 +17,8 @@ $( document ).ready(function() {
 
 
 
+
+
   $.cookieCuttr({
   cookieAnalytics: false,
   cookieMessage: 'We use cookies on this website, you can <a href="{{cookiePolicyLink}}" title="read about our cookies">read about them here</a>. To use the website as intended please...',
@@ -46,10 +48,38 @@ if(!mobile){
   $scrollWrapper.mCustomScrollbar({
 
     scrollInertia: 200,
-    mouseWheel:{ scrollAmount: 150 }
+    mouseWheel:{ scrollAmount: 150 },
+    callbacks:{
+    whileScrolling:function(){
+
+myCustomFn(this);
+    }
+}
 
   });
 }
+
+function myCustomFn(el){
+
+    var windscroll = -el.mcs.top;
+
+   if (windscroll >= 100) {
+       $('#navigationButtons').addClass('fixed');
+       $('#scroll-wrapper section').each(function(i) {
+           if ($(this).position().top <= windscroll - 20) {
+               $('#navigationButtons div.active').removeClass('active');
+               $('#navigationButtons div').eq(i).addClass('active');
+           }
+       });
+
+   } else {
+
+       $('#navigationButtons').removeClass('fixed');
+       $('#navigationButtons a.active').removeClass('active');
+       $('#navigationButtons a:first').addClass('active');
+   }
+}
+
 
 jQuery( window ).on( "orientationchange", function( event ) {
 
@@ -84,8 +114,19 @@ $(window).resize(function() {
 
   $navButton.on("click", function(){
   /*  e.preventDefault(); KAN BEHÖVAS OM JAG BYTER TILL EN a*/
-  $navButton.removeClass('active'); // remove first
-  $(this).addClass('active');
+
+
+
+  var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').position().top - 28;
+
+        $scrollWrapper.mCustomScrollbar("scrollTo",scrollPoint,{
+        scrollInertia:900
+        });
+
+
+
+    return false;
 
   });
 
@@ -121,6 +162,19 @@ setTimeout(function(){
 
             $textareFeedback.html(text_remaining);
         });
+
+
+
+
+
+$("#hero-button").on("click", function(){
+/*  e.preventDefault(); KAN BEHÖVAS OM JAG BYTER TILL EN a*/
+
+$scrollWrapper.mCustomScrollbar("scrollTo",$("#item1"),{
+scrollInertia:900
+});
+
+});
 
 
 /*
