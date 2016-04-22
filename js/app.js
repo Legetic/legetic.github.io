@@ -66,7 +66,7 @@ function myCustomFn(el){
    if (windscroll >= 100) {
        $('#navigationButtons').addClass('fixed');
        $('#scroll-wrapper section').each(function(i) {
-           if ($(this).position().top <= windscroll + 370) {
+           if ($(this).position().top <= windscroll + 459) {
                $('#navigationButtons div.active').removeClass('active');
                $('#navigationButtons div').eq(i).addClass('active');
            }
@@ -82,12 +82,12 @@ function myCustomFn(el){
 
    $('.item').each( function(i){
 
-           var bottom_of_object = $(this).position().top + $(this).outerHeight();
-
+           var bottom_of_object = $(this).position().top;
+//+ $(this).outerHeight()
            var bottom_of_window = windscroll + $($scrollWrapper).height();
 
            /* If the object is completely visible in the window, fade it it */
-           if( bottom_of_window > bottom_of_object - 500){
+           if( bottom_of_window > bottom_of_object + 300){
 
                $(this).animate({'opacity':'1'},500);
 
