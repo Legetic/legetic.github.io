@@ -638,9 +638,10 @@ display: block;
 
 
 .item{
-  margin-bottom: 80px;
+  margin-bottom: 180px;
 
-  height:700px;
+  min-height:500px;
+  overflow:auto;
 }
 body:not(.mobile) .item{
   opacity: 0;
