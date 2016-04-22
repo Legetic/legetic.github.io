@@ -639,8 +639,11 @@ display: block;
 
 .item{
   margin-bottom: 80px;
-  opacity: 0;
+
   height:700px;
+}
+body:not(.mobile) .item{
+  opacity: 0;
 }
 .info{
       float: left;
