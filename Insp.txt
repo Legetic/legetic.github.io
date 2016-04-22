@@ -22,8 +22,8 @@ http://jquery-jkit.com/commands/parallax.html
 http://getbootstrap.com/getting-started/#download
 http://smoothstate.com/
 https://www.getmdl.io/components/index.html#buttons-section
-http://manos.malihu.gr/jquery-custom-content-scroller/
 
+http://manos.malihu.gr/jquery-custom-content-scroller/
 https://images.weserv.nl/
 http://t4t5.github.io/sweetalert/
 http://tympanus.net/codrops/2014/04/09/how-to-create-a-circular-progress-button/
