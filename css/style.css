@@ -654,7 +654,8 @@ display: block;
   margin-bottom: 180px;
 
   min-height:300px;
-  overflow:auto;
+  overflow-y: auto;
+overflow-x: hidden;
 }
 body:not(.mobile) .item{
   opacity: 0;
