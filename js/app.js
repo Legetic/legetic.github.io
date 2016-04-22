@@ -66,7 +66,7 @@ function myCustomFn(el){
    if (windscroll >= 100) {
        $('#navigationButtons').addClass('fixed');
        $('#scroll-wrapper section').each(function(i) {
-           if ($(this).position().top <= windscroll + 200) {
+           if ($(this).position().top <= windscroll + 370) {
                $('#navigationButtons div.active').removeClass('active');
                $('#navigationButtons div').eq(i).addClass('active');
            }

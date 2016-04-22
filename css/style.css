@@ -204,6 +204,8 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
   opacity: 1;
 }
 #hero-button{
+text-decoration: none !important;
+
   width: 150px;
   height: 50px;
   display: block;
