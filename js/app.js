@@ -183,10 +183,10 @@ setTimeout(function(){
 
 
 
-$("#hero-button").on("click", function(){
+$("#advance").on("click", function(){
 /*  e.preventDefault(); KAN BEHÖVAS OM JAG BYTER TILL EN a*/
 
-$scrollWrapper.mCustomScrollbar("scrollTo",$("#item1"),{
+$scrollWrapper.mCustomScrollbar("scrollTo",$( ".item:first" ),{
 scrollInertia:900
 });
 

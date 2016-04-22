@@ -47,6 +47,12 @@ p{
 
 }
 
+hr{
+  border: 1px solid white;
+  margin-left: 40px;
+    margin-right: 40px;
+}
+
 #body{
   z-index: -2;
   /* position: absolute; */
@@ -193,14 +199,7 @@ transition-timing-function: cubic-bezier(.4,.56,.03,.93); /* easeOutExpo */
       font-size: 25px;
 
 }
-.small #hero-button{
-  top:95%;
-  -webkit-transform: translate(-50%,-100%);
--moz-transform: translate(-50%,-100%);
--ms-transform: translate(-50%,-100%);
-transform: translate(-50%,-100%);
-opacity: 0;
-}
+
 .small.intro-done #hero-button{
   opacity: 1;
 }
@@ -255,9 +254,22 @@ opacity: 0;
   width: 170px;
   letter-spacing: 3px;
 }
-.playerBox{
-margin-left:0!important;
-z-index: -1;
+
+#advance{
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  bottom: 4%;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .loaded.mobile #outer-wrapper{
@@ -640,7 +652,7 @@ display: block;
 .item{
   margin-bottom: 180px;
 
-  min-height:500px;
+  min-height:300px;
   overflow:auto;
 }
 body:not(.mobile) .item{
