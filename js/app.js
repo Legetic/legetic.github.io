@@ -78,6 +78,22 @@ function myCustomFn(el){
        $('#navigationButtons a.active').removeClass('active');
        $('#navigationButtons a:first').addClass('active');
    }
+
+
+   $('.item').each( function(i){
+
+           var bottom_of_object = $(this).position().top + $(this).outerHeight();
+
+           var bottom_of_window = windscroll + $($scrollWrapper).height();
+
+           /* If the object is completely visible in the window, fade it it */
+           if( bottom_of_window > bottom_of_object - 500){
+
+               $(this).animate({'opacity':'1'},500);
+
+           }
+
+       });
 }
 
 
