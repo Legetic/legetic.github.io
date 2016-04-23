@@ -656,6 +656,8 @@ display: block;
   min-height:300px;
   overflow-y: auto;
 overflow-x: hidden;
+
+background: rgba(0,0,0,0.8);
 }
 body:not(.mobile) .item{
   opacity: 0;
@@ -679,7 +681,8 @@ padding-right: 50px;
     box-sizing: border-box;
 
     color:white;
-    font-weight: lighter;
+    font-weight: normal;
+font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
 .right .info{
