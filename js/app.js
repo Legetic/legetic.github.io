@@ -66,7 +66,7 @@ function myCustomFn(el){
    if (windscroll >= 100) {
        $('#navigationButtons').addClass('fixed');
        $('#scroll-wrapper section').each(function(i) {
-           if ($(this).position().top <= windscroll + 259) {
+           if ($(this).position().top <= windscroll +500) {
                $('#navigationButtons div.active').removeClass('active');
                $('#navigationButtons div').eq(i).addClass('active');
            }
@@ -75,7 +75,7 @@ function myCustomFn(el){
    } else {
 
        $('#navigationButtons').removeClass('fixed');
-       $('#navigationButtons a.active').removeClass('active');
+
        $('#navigationButtons a:first').addClass('active');
    }
 
