@@ -66,7 +66,7 @@ function myCustomFn(el){
    if (windscroll >= 100) {
        $('#navigationButtons').addClass('fixed');
        $('#scroll-wrapper section').each(function(i) {
-           if ($(this).position().top <= windscroll + 459) {
+           if ($(this).position().top <= windscroll + 259) {
                $('#navigationButtons div.active').removeClass('active');
                $('#navigationButtons div').eq(i).addClass('active');
            }
@@ -87,7 +87,7 @@ function myCustomFn(el){
            var bottom_of_window = windscroll + $($scrollWrapper).height();
 
            /* If the object is completely visible in the window, fade it it */
-           if( bottom_of_window > bottom_of_object + 200){
+           if( bottom_of_window > bottom_of_object ){
 
                $(this).animate({'opacity':'1'},500);
 
@@ -134,7 +134,7 @@ $(window).resize(function() {
 
 
   var scrollAnchor = $(this).attr('data-scroll'),
-        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').position().top - 28;
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').position().top;
 
         $scrollWrapper.mCustomScrollbar("scrollTo",scrollPoint,{
         scrollInertia:900
