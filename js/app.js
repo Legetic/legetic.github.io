@@ -63,10 +63,10 @@ function myCustomFn(el){
 
     var windscroll = -el.mcs.top;
 
-   if (windscroll >= 100) {
+   if (windscroll >= 200) {
        $('#navigationButtons').addClass('fixed');
        $('#scroll-wrapper section').each(function(i) {
-           if ($(this).position().top <= windscroll +500) {
+           if ($(this).position().top <= windscroll + 500) {
                $('#navigationButtons div.active').removeClass('active');
                $('#navigationButtons div').eq(i).addClass('active');
            }
@@ -75,8 +75,8 @@ function myCustomFn(el){
    } else {
 
        $('#navigationButtons').removeClass('fixed');
-
-       $('#navigationButtons a:first').addClass('active');
+       $('#navigationButtons div.active').removeClass('active');
+       $('#navigationButtons div:first').addClass('active');
    }
 
 
