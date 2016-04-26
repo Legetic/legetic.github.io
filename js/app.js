@@ -22,7 +22,7 @@ $( document ).ready(function() {
   $.cookieCuttr({
   cookieAnalytics: false,
   cookieMessage: 'We use cookies on this website, you can <a href="{{cookiePolicyLink}}" title="read about our cookies">read about them here</a>. To use the website as intended please...',
-  cookiePolicyLink: 'http://cookiecuttr.com/'
+  cookiePolicyLink: 'terms.html#cookies'
   });
 
 
@@ -87,7 +87,7 @@ function myCustomFn(el){
            var bottom_of_window = windscroll + $($scrollWrapper).height();
 
            /* If the object is completely visible in the window, fade it it */
-           if( bottom_of_window > bottom_of_object + 300){
+           if( bottom_of_window > bottom_of_object + 200){
 
                $(this).animate({'opacity':'1'},500);
 
