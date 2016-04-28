@@ -62,14 +62,6 @@ $exit.toggle();
 
   });
 
-  $("#policyLink").on("click", function(){
-    $(".cc-cookies").fadeToggle(300, "linear" );
-$policy.toggleClass("extended");
-$close.toggleClass("extended");
-$exit.toggle();
-
-
-  });
 
   $("#footerTerms").on("click", function(){
     $(".cc-cookies").fadeToggle(300, "linear" );
@@ -93,6 +85,7 @@ $close.removeClass("extended");
     $(".cc-cookies").fadeToggle(300, "linear" );
 $policy.toggleClass("extended");
 $close.toggleClass("extended");
+$exit.toggle();
 
 
   });
