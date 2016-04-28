@@ -18,8 +18,13 @@ $( document ).ready(function() {
   var $policy = $("#policy");
 var $important = $(".important");
   var $close = $("#close");
+<<<<<<< HEAD
 var $exit = $(".exit");
 
+=======
+
+
+>>>>>>> origin/master
   function loadPage(href)
               {
                   var xmlhttp = new XMLHttpRequest();
@@ -82,8 +87,25 @@ $terms.toggleClass("extended");
 $close.toggleClass("extended");
 $exit.toggle();
 
+
   });
 
+
+  $close.on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$important.removeClass("extended");
+$close.removeClass("extended");
+
+
+  });
+
+  $("#policyLink").on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$policy.toggleClass("extended");
+$close.toggleClass("extended");
+
+
+  });
 
 /*
   $(function(){
