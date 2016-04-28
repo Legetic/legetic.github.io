@@ -18,20 +18,10 @@ $( document ).ready(function() {
   var $policy = $("#policy");
 var $important = $(".important");
   var $close = $("#close");
-<<<<<<< HEAD
+
 var $exit = $(".exit");
 
-=======
 
-
->>>>>>> origin/master
-  function loadPage(href)
-              {
-                  var xmlhttp = new XMLHttpRequest();
-                  xmlhttp.open("GET", href, false);
-                  xmlhttp.send();
-                  return xmlhttp.responseText;
-              }
 
 
   $.cookieCuttr({
