@@ -14,15 +14,74 @@ $( document ).ready(function() {
   var $message = $("#message");
   var $textareFeedback = $('#textarea_feedback');
   var $navButton = $(".navButton");
+  var $terms = $("#terms");
+  var $policy = $("#policy");
+var $important = $(".important");
+  var $close = $("#close");
+var $exit = $(".exit");
 
-
-
+  function loadPage(href)
+              {
+                  var xmlhttp = new XMLHttpRequest();
+                  xmlhttp.open("GET", href, false);
+                  xmlhttp.send();
+                  return xmlhttp.responseText;
+              }
 
 
   $.cookieCuttr({
   cookieAnalytics: false,
-  cookieMessage: 'We use cookies on this website, you can <a href="{{cookiePolicyLink}}" title="read about our cookies">read about them here</a>. To use the website as intended please...',
-  cookiePolicyLink: 'terms.html#cookies'
+  cookieMessage: 'We use cookies on this website, you can <a href="#" title="read about our cookies" id="cookies">read about them here</a>. To use the website as intended please...',
+
+  });
+  //cookiePolicyLink: 'terms.html#cookies'
+  //{{cookiePolicyLink}}
+
+  $("#cookies").on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$terms.toggleClass("extended");
+$close.toggleClass("extended");
+$exit.toggle();
+
+$terms.animate({scrollTop: $("#cookiesSection").position().top}, 1000);
+
+
+
+  });
+
+
+  $close.on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$important.removeClass("extended");
+$close.removeClass("extended");
+$exit.toggle();
+
+
+  });
+  $exit.on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$important.removeClass("extended");
+$close.removeClass("extended");
+$exit.toggle();
+
+
+  });
+
+  $("#policyLink").on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$policy.toggleClass("extended");
+$close.toggleClass("extended");
+$exit.toggle();
+
+
+  });
+
+  $("#footerTerms").on("click", function(){
+    $(".cc-cookies").fadeToggle(300, "linear" );
+$terms.toggleClass("extended");
+$close.toggleClass("extended");
+$exit.toggle();
+
   });
 
 
